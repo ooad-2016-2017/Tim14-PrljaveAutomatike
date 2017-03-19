@@ -1,6 +1,6 @@
-## Tim14-VisokaSimbolika
-Visoka Simbolika
-Članovi Tima:
+# Tim14-VisokaSimbolika
+**Visoka Simbolika
+Članovi Tima:**
 
 1. Škulj Dženita
 2. Šikić Haris
