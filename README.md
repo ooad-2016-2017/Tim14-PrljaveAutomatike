@@ -1,4 +1,4 @@
-# Tim14-VisokaSimbolika
+## Tim14-VisokaSimbolika
 Visoka Simbolika
 Članovi Tima:
 
