@@ -9,7 +9,7 @@
 ### Opis teme
 --- 
 
-Aplikacija  instrukcije za svrhu ima lakšu organizaciju instrukcija i lakše povezivanje ljudi koji drže i traže instrukcije. Aplikacija će imati za mogućnost biranja statusa korisnika tj. instruktor ili klijent. Korisnik klijent će imati uvid u kvalitet održavanje instrukcija određenog instruktora i na osnovu toga može da bira instruktora što će mu pomoći u bespotrebom gubljenju vremena, a korisnik instruktor će moći da promovira svoj rad na osnovu kvaliteta održanih instrukcija sticanjem dobrog rejtinga. Korisnik klijent će moći da bira instruktora u svom neposrednom okruženju što je još jedna od prednosti aplikacije. A korisnik instruktor će moći da postavlja određene materijale na svoj profil vezano za određene predmete.
+Aplikacija  TutorFinder za svrhu ima lakšu organizaciju razmjene znanja i lakše povezivanje ljudi kojima je potrebno znanje iz određene oblasti i ljudi koji prenose znanje iz određene oblasti. Aplikacija će imati za mogućnost biranja statusa korisnika tj. instruktor ili klijent. Korisnik klijent će imati uvid u kvalitet održavanje instrukcija određenog instruktora i na osnovu toga može da bira instruktora što će mu pomoći u bespotrebom gubljenju vremena, a korisnik instruktor će moći da promovira svoj rad na osnovu kvaliteta održanih instrukcija sticanjem dobrog rejtinga. Korisnik klijent će moći da bira instruktora u svom neposrednom okruženju što je još jedna od prednosti aplikacije. A korisnik instruktor će moći da postavlja određene materijale na svoj profil vezano za određene predmete.
 
 ### Procesi
 ---
@@ -42,13 +42,13 @@ Ukoliko dođe do izmjene da instruktor ili klijent zbog nekog razloga treba da o
 (ovo nije dovršeno, treba još razraditi)
 
 #### Upload radnih materijala
- *Korisnik iz reda instruktora može otvoriti stranicu za upload radnih materijala. Sistem mu pruža izbornik sa predmetima iz kojih navedeni korisnik nudi instrukcije te opciju za uploadnavedenih dokumenata. Dozvoljeno je uploadovati samo specifične tipove datoteka (doc, 	pdf i sl.) iz sigurnosnih i praktičnih razloga. Nakon uploada administrator (eventualno neki automatizovani sistem) vrši provjeru ispravnosti i validnosti datoteka te odobrava pristup klijentima navedenim datotekama.
+ * Korisnik iz reda instruktora može otvoriti stranicu za upload radnih materijala. Sistem mu pruža izbornik sa predmetima iz kojih navedeni korisnik nudi instrukcije te opciju za uploadnavedenih dokumenata. Dozvoljeno je uploadovati samo specifične tipove datoteka (doc, 	pdf i sl.) iz sigurnosnih i praktičnih razloga. Nakon uploada administrator (eventualno neki automatizovani sistem) vrši provjeru ispravnosti i validnosti datoteka te odobrava pristup klijentima navedenim datotekama.
 
 #### Odabir predmeta iz kojeg klijent zahtijeva uslugu
- *Korisnik ima mogućnost dobijanja spiska svih raspoloživih predmeta. Nakon izbora određenog predmeta klijentu se nudi izbornik u kojem može dobiti spisak instruktora na osnovu klijentove lokacije ili spisak svih raspoloživih instruktora
+ * Korisnik ima mogućnost dobijanja spiska svih raspoloživih predmeta. Nakon izbora određenog predmeta klijentu se nudi izbornik u kojem može dobiti spisak instruktora na osnovu klijentove lokacije ili spisak svih raspoloživih instruktora
 
 #### Traženje instruktora na osnovu navedene lokacije klijenta
- *Tom prilikom klijent dobija spisak instruktora koji nude usluge instrukcije iz odabranog predmeta a koji se nalaze unutar unaprijed definirane okoline u odnosu na lokaciju klijenta (i odabranog predmeta). Iz tog izbornika klijent može pristupiti svakom od datih profila instruktora te obaviti ranije navedeni postupak ugovaranja termina održavanja instrukcija.
+ * Tom prilikom klijent dobija spisak instruktora koji nude usluge instrukcije iz odabranog predmeta a koji se nalaze unutar unaprijed definirane okoline u odnosu na lokaciju klijenta (i odabranog predmeta). Iz tog izbornika klijent može pristupiti svakom od datih profila instruktora te obaviti ranije navedeni postupak ugovaranja termina održavanja instrukcija.
 
 
 
