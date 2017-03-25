@@ -38,8 +38,7 @@ Ukoliko dođe do izmjene da instruktor ili klijent zbog nekog razloga treba da o
 
 #### Proces ocjenjivanja instruktora 
 
- * Korisnik klijent po završetku instrukcija mora da ocijeni instruktora sa ocjenom od 1 do 5. 
-(ovo nije dovršeno, treba još razraditi)
+ * Korisnik klijent po završetku instrukcija mora da ocijeni instruktora sa ocjenom od 1 do 5. Ocjenjivanje je moguće izvršiti samo ako su instrukcije iz datog predmeta održane. U svrhu potvrde održavanja sistem generiše jedinstvene kodove za instruktora i klijenta koji ih razmjenjuju prilikom održavanja instrukcija
 
 #### Upload radnih materijala
  * Korisnik iz reda instruktora može otvoriti stranicu za upload radnih materijala. Sistem mu pruža izbornik sa predmetima iz kojih navedeni korisnik nudi instrukcije te opciju za uploadnavedenih dokumenata. Dozvoljeno je uploadovati samo specifične tipove datoteka (doc, 	pdf i sl.) iz sigurnosnih i praktičnih razloga. Nakon uploada administrator (eventualno neki automatizovani sistem) vrši provjeru ispravnosti i validnosti datoteka te odobrava pristup klijentima navedenim datotekama.
