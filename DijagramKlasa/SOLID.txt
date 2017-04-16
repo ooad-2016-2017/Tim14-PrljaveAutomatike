@@ -1,0 +1,49 @@
+
+Analiza SOLID principa na prethodno uraðenom dijagramu klase:
+
+1.-S-
+Single Responsiility Principle-SRP (Princip pojedinaène odgovornosti):
+
+	"KLASA BI TREBALA IMATI SAMO JEDAN RAZLOG ZA PROMJENU."
+
+
+???????????????????????????????
+
+
+
+2.-O-
+Open Closed Principle-OCP (Otvoreno zatvoren princip):
+
+	"ENTITETI SOFTVERA (KLASE, MODULI, FUNKCIJE) TREBALI BI BITI OTVORENI ZA NADOGRADNJU, ALI ZATVORENI ZA MODIFIKACIJE. "
+
+
+?????????????????????????????
+
+
+
+3.-L-
+Liskov Substitution Principle-LSP (Liskov princip zamjene):
+	
+	"PODTIPOVI MORAJU BITI ZAMJENJIVI NJIHOVIM OSNOVNIM TIPOVIMA. "
+
+Ovaj princip je zadovoljen jer naslijeðivanja u našem dijagramu klasa su nasljeðivanje klase Klijent i klase Instruktor iz klase Korisnik, a te
+klase Klijent i Instruktor implementiraju sve naslijeðene metode iz bazne klase, pa se ne bismo nasli u nekim nedozvoljenim situacijama
+koristeci nasljedeðene metode.
+
+
+4.-I- 
+Interface Segregation Principle-ISP (Princip izoliranja interfejsa)
+	
+	"KLIJENTI NE TREBA DA OVISE O METODAMA KOJE NEÆE UPOTREBLJAVATI."
+
+Ovaj princip je takoðer zadoovoljen, jer nemamo tzv. debelih klasa. Klase koje su implementirane u ovom projektu su struktuirane tako da
+imaju samo one metode koje su zaista potrebne i koje ce koristiti korisnik.
+
+
+5.-D- 
+Dependency Inversion Principle-DIP ( Princip inverzije ovisnosti)
+
+	"MODULI VISOKOG NIVOA NE BI TREBALI OVISITI OD MODULA NISKOG NIVOA. OBA BI TREBALO DA OVISE OD APSTRAKCIJA."
+
+Kako se nase klase Klijent i Instruktor nasljedjuju iz apstraktne klase Korisnik, postujemo ovaj princip, pa tako i smanjujemo uticaj koji promjena
+moze imati na sistem.
