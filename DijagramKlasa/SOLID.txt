@@ -6,8 +6,8 @@ Single Responsiility Principle-SRP (Princip pojedinaène odgovornosti):
 
 	"KLASA BI TREBALA IMATI SAMO JEDAN RAZLOG ZA PROMJENU."
 
-
-???????????????????????????????
+Svaka klasa je zasebna cjelina koja ima atribute koji su vezani samo za rad te klase i metode koji ce se koristiti kao kontroleri, samim tim nijedna klasa nece ovisiti
+implementaciji metoda i izmjenama istih.
 
 
 
@@ -16,9 +16,8 @@ Open Closed Principle-OCP (Otvoreno zatvoren princip):
 
 	"ENTITETI SOFTVERA (KLASE, MODULI, FUNKCIJE) TREBALI BI BITI OTVORENI ZA NADOGRADNJU, ALI ZATVORENI ZA MODIFIKACIJE. "
 
-
-?????????????????????????????
-
+Sve klase u ovom dijagramu su definirane kao cjeline i one ne dozvoljavaju modifikacije postojecih klasa ali dozvoljavaju nadogradnju tipa možemo naslijediti iz jedne klase
+drugu i slicno. Modifikacije nisu dobre zbog toga što bi tada jedna radnja mogla izazvati dva razlicita efekta, ono što korisnik ne bi ocekivao, što je nepoželjno. 
 
 
 3.-L-
