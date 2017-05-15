@@ -14,7 +14,6 @@
         <FlyoutBase.AttachedFlyout>
             <MenuFlyout/>
         </FlyoutBase.AttachedFlyout>
-        <TextBox x:Name="textBox" Margin="425,60,425,578" TextWrapping="Wrap" Text="Tutor Finder " FontSize="72" FontWeight="Bold" FontFamily="Californian FB" SelectionHighlightColor="#FF990303" Background="{x:Null}" Grid.ColumnSpan="3"/>
         <Image x:Name="image" Margin="246,171,892,420" RenderTransformOrigin="-0.036,-0.26" Stretch="Fill" Source="http://images.clipartpanda.com/father-face-clipart-1195444795826861756Gerald_G_Man_Face_4_-_World_Label.svg.hi.png"/>
         <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="459,171,0,0" TextWrapping="Wrap" Text="Ime: " VerticalAlignment="Top" FontSize="18" Height="24" Width="34"/>
         <TextBlock x:Name="textBlock_Copy" HorizontalAlignment="Left" Margin="459,220,0,0" TextWrapping="Wrap" Text="Prezime:" VerticalAlignment="Top" FontSize="18" Height="24" Width="67"/>
@@ -32,6 +31,12 @@
         <TextBlock x:Name="textBlock_Copy7" HorizontalAlignment="Left" Margin="559,276,0,0" TextWrapping="Wrap" Text="123/456-789" VerticalAlignment="Top" FontSize="18" Height="24" Width="150"/>
         <TextBlock x:Name="textBlock_Copy8" HorizontalAlignment="Left" Margin="559,332,0,0" TextWrapping="Wrap" Text="sstudentic@etf.unsa.ba" VerticalAlignment="Top" FontSize="18" Height="24" Width="232"/>
         <TextBlock x:Name="textBlock_Copy9" HorizontalAlignment="Left" Margin="559,384,0,0" TextWrapping="Wrap" Text="Sarajevo" VerticalAlignment="Top" FontSize="18" Height="24" Width="150"/>
+        <TextBlock x:Name="textBlock1" Margin="420,67,420,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="78" FontFamily="Californian FB" FontWeight="Bold">
+            <Run Foreground="#FF890000" Text="Tut"/>
+            <Run Text="or "/>
+            <Run Foreground="#FF890000" Text="Fi"/>
+            <Run Text="nder"/>
+        </TextBlock>
 
     </Grid>
 </Page>

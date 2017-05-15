@@ -7,19 +7,34 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <TextBox x:Name="textBox" Margin="425,54,425,584" TextWrapping="Wrap" Text="Tutor Finder " FontSize="72" FontWeight="Bold" FontFamily="Californian FB" SelectionHighlightColor="#FF990303" Background="{x:Null}"/>
+    <Grid Background="{ThemeResource AppBarBackground}">
         <TextBox x:Name="textBox1" Height="18" Margin="551,210,445,478" TextWrapping="Wrap" Text=""/>
         <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="445,210,0,478" TextWrapping="Wrap" Text="e-mail" Width="70"/>
-        <TextBlock x:Name="textBlock1" Margin="445,270.597,764.287,0" TextWrapping="Wrap" Text="password" VerticalAlignment="Top" RenderTransformOrigin="0.455,1.838" UseLayoutRounding="False" d:LayoutRounding="Auto" Width="66">
-            <TextBlock.RenderTransform>
-                <CompositeTransform Rotation="0.158" TranslateX="1.876" TranslateY="0.165"/>
-            </TextBlock.RenderTransform>
-        </TextBlock>
-        <Button x:Name="button" Content="Prijavi se" HorizontalAlignment="Stretch" Margin="601,364,601,0" VerticalAlignment="Top" RenderTransformOrigin="0.108,-0.312"/>
+        <Button x:Name="button" Content="Prijavi se" HorizontalAlignment="Stretch" Margin="601,364,601,0" VerticalAlignment="Top" RenderTransformOrigin="0.108,-0.312" Background="#FF890000" Foreground="White"/>
         <TextBlock x:Name="textBlock2" Margin="559,463,559,0" TextWrapping="Wrap" Text="Zaboravili ste password?" VerticalAlignment="Top"/>
         <TextBlock x:Name="textBlock3" Height="28" Margin="601,518,601,0" TextWrapping="Wrap" Text="Registruj se" VerticalAlignment="Top"/>
         <PasswordBox x:Name="passwordBox" Margin="551,266,445,0" VerticalAlignment="Top"/>
+        <TextBlock x:Name="textBlock_Copy" HorizontalAlignment="Left" Margin="445,266,0,422" TextWrapping="Wrap" Width="70" FocusVisualSecondaryBrush="#99F01B1B">
+            <Run Text="password"/>
+            <LineBreak/>
+            <Run/>
+        </TextBlock>
+        <TextBlock x:Name="textBlock1" Margin="420,67,420,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="78" FontFamily="Californian FB" FontWeight="Bold">
+            <Run Foreground="#FF890000" Text="Tut"/>
+            <Run Text="or "/>
+            <Run Foreground="#FF890000" Text="Fi"/>
+            <Run Text="nder"/>
+        </TextBlock>
+        <TextBlock x:Name="textBlock4" HorizontalAlignment="Left" Margin="98,116,0,0" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="-0.032,2.85" FontWeight="Bold">
+            <Run Text="ovdje treba ogo"/>
+            <LineBreak/>
+            <Run/>
+        </TextBlock>
+        <TextBlock x:Name="textBlock5" HorizontalAlignment="Left" Margin="1044,116,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontWeight="Bold">
+            <Run Text="i ovdje treba logo"/>
+            <LineBreak/>
+            <Run/>
+        </TextBlock>
 
     </Grid>
 </Page>

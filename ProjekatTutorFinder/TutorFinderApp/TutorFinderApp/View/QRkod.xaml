@@ -22,9 +22,15 @@
                 </LinearGradientBrush>
             </Image.FocusVisualSecondaryBrush>
         </Image>
-        <TextBlock x:Name="textBlock" HorizontalAlignment="Center" Height="103" Margin="65,121,69,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="226">
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Center" Height="103" Margin="525,181,529,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="226">
             <Run Text="Vaš QR kod koji prikazujete klijentu da bi dobio mogućnost da vas ocijeni"/>
             <Run Text=", nakon sto skenira isti."/>
+        </TextBlock>
+        <TextBlock x:Name="textBlock1" Margin="420,67,420,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="78" FontFamily="Californian FB" FontWeight="Bold">
+            <Run Foreground="#FF890000" Text="Tut"/>
+            <Run Text="or "/>
+            <Run Foreground="#FF890000" Text="Fi"/>
+            <Run Text="nder"/>
         </TextBlock>
 
     </Grid>

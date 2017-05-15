@@ -8,26 +8,30 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <TextBox x:Name="textBox" Margin="425,54,425,584" TextWrapping="Wrap" Text="Tutor Finder " FontSize="72" FontWeight="Bold" FontFamily="Californian FB" SelectionHighlightColor="#FF990303" Background="{x:Null}"/>
-        <TextBlock x:Name="textBlock" Margin="445,213,804,475" TextWrapping="Wrap" Text="Ime" FontSize="18"/>
-        <TextBlock x:Name="textBlock1" Margin="445,261,763,427" TextWrapping="Wrap" Text="Prezime" FontSize="18"/>
-        <TextBlock x:Name="textBlock2" Margin="445,309,750,379" TextWrapping="Wrap" Text="Username" RenderTransformOrigin="0.569,-0.125" FontSize="18"/>
-        <TextBlock x:Name="textBlock3" Margin="445,357,763,331" TextWrapping="Wrap" Text="E-mail" FontSize="18"/>
-        <TextBlock x:Name="textBlock4" Margin="445,453,729,235" TextWrapping="Wrap" Text="Broj telefona" FontSize="18"/>
-        <CheckBox x:Name="checkBox" Content="Student/ucenik" HorizontalAlignment="Stretch" Margin="425,549,591,0" VerticalAlignment="Top" FontSize="18"/>
-        <CheckBox x:Name="checkBox1" Content="Instruktor" HorizontalAlignment="Stretch" Margin="735,549,425,139" VerticalAlignment="Stretch" FontSize="18"/>
-        <TextBlock x:Name="textBlock5" Margin="473,156,473,0" TextWrapping="Wrap" Text="Molimo Vas da unesete sljedeće podatke:" VerticalAlignment="Top" FontSize="18"/>
-        <Button x:Name="button" Content="Registruj se" HorizontalAlignment="Stretch" Margin="584,611,584,0" VerticalAlignment="Top" FontSize="18"/>
-        <TextBlock x:Name="textBlock6" Margin="445,501,787,187" TextWrapping="Wrap" Text="Grad" FontSize="18" RenderTransformOrigin="0.576,0.24"/>
-        <TextBox x:Name="textBox1" Margin="560,213,445,475" TextWrapping="Wrap" Text=""/>
-        <TextBox x:Name="textBox_Copy" Margin="425,54,425,584" TextWrapping="Wrap" Text="Tutor Finder " FontSize="72" FontWeight="Bold" FontFamily="Californian FB" SelectionHighlightColor="#FF990303" Background="{x:Null}"/>
-        <TextBox x:Name="textBox1_Copy" Margin="560,261,445,427" TextWrapping="Wrap" Text=""/>
-        <TextBox x:Name="textBox1_Copy1" Margin="560,309,445,379" TextWrapping="Wrap" Text=""/>
-        <TextBox x:Name="textBox1_Copy2" Margin="560,357,445,331" TextWrapping="Wrap" Text=""/>
-        <TextBox x:Name="textBox1_Copy4" Margin="560,453,445,235" TextWrapping="Wrap" Text=""/>
-        <TextBox x:Name="textBox1_Copy5" Margin="560,501,445,187" TextWrapping="Wrap" Text=""/>
-        <TextBlock x:Name="textBlock3_Copy" Margin="445,405,756,283" TextWrapping="Wrap" Text="Password" FontSize="18"/>
-        <PasswordBox x:Name="passwordBox" Margin="560,405,445,0" VerticalAlignment="Top"/>
+        <TextBlock x:Name="textBlock" Margin="445,245,804,443" TextWrapping="Wrap" Text="Ime" FontSize="18"/>
+        <TextBlock x:Name="textBlock1" Margin="445,293,763,395" TextWrapping="Wrap" Text="Prezime" FontSize="18"/>
+        <TextBlock x:Name="textBlock2" Margin="445,341,750,347" TextWrapping="Wrap" Text="Username" RenderTransformOrigin="0.569,-0.125" FontSize="18"/>
+        <TextBlock x:Name="textBlock3" Margin="445,389,763,299" TextWrapping="Wrap" Text="E-mail" FontSize="18"/>
+        <TextBlock x:Name="textBlock4" Margin="445,485,729,203" TextWrapping="Wrap" Text="Broj telefona" FontSize="18"/>
+        <CheckBox x:Name="checkBox" Content="Student/ucenik" HorizontalAlignment="Stretch" Margin="445,581,591,0" VerticalAlignment="Top" FontSize="18"/>
+        <CheckBox x:Name="checkBox1" Content="Instruktor" HorizontalAlignment="Stretch" Margin="735,581,420,107" VerticalAlignment="Stretch" FontSize="18"/>
+        <TextBlock x:Name="textBlock5" Margin="473,188,473,0" TextWrapping="Wrap" Text="Molimo Vas da unesete sljedeće podatke:" VerticalAlignment="Top" FontSize="18"/>
+        <Button x:Name="button" Content="Registruj se" HorizontalAlignment="Stretch" Margin="584,643,584,0" VerticalAlignment="Top" FontSize="18"/>
+        <TextBlock x:Name="textBlock6" Margin="445,533,787,155" TextWrapping="Wrap" Text="Grad" FontSize="18" RenderTransformOrigin="0.576,0.24"/>
+        <TextBox x:Name="textBox1" Margin="560,245,445,443" TextWrapping="Wrap" Text=""/>
+        <TextBox x:Name="textBox1_Copy" Margin="560,293,445,395" TextWrapping="Wrap" Text=""/>
+        <TextBox x:Name="textBox1_Copy1" Margin="560,341,445,347" TextWrapping="Wrap" Text=""/>
+        <TextBox x:Name="textBox1_Copy2" Margin="560,389,445,299" TextWrapping="Wrap" Text=""/>
+        <TextBox x:Name="textBox1_Copy4" Margin="560,485,445,203" TextWrapping="Wrap" Text=""/>
+        <TextBox x:Name="textBox1_Copy5" Margin="560,533,445,155" TextWrapping="Wrap" Text=""/>
+        <TextBlock x:Name="textBlock3_Copy" Margin="445,437,756,251" TextWrapping="Wrap" Text="Password" FontSize="18"/>
+        <PasswordBox x:Name="passwordBox" Margin="560,437,445,0" VerticalAlignment="Top"/>
+        <TextBlock x:Name="textBlock1_Copy" Margin="420,67,420,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="78" FontFamily="Californian FB" FontWeight="Bold">
+            <Run Foreground="#FF890000" Text="Tut"/>
+            <Run Text="or "/>
+            <Run Foreground="#FF890000" Text="Fi"/>
+            <Run Text="nder"/>
+        </TextBlock>
 
     </Grid>
 </Page>
