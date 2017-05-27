@@ -95,6 +95,11 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\20170527013814_InitialMigration.cs" />
+    <Compile Include="Migrations\20170527013814_InitialMigration.designer.cs">
+      <DependentUpon>20170527013814_InitialMigration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\TutorFinderDbContextModelSnapshot.cs" />
     <Compile Include="Models\Instruktor.cs" />
     <Compile Include="Models\Klijent.cs" />
     <Compile Include="Models\Predmet.cs" />
@@ -105,6 +110,22 @@
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModels\KorisnikVM.cs" />
+    <Compile Include="View\QRkod.xaml.cs">
+      <DependentUpon>QRkod.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Registracija.xaml.cs">
+      <DependentUpon>Registracija.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Login.xaml.cs">
+      <DependentUpon>Login.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\SlanjeZahtjeva.xaml.cs">
+      <DependentUpon>SlanjeZahtjeva.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\ZaboravljeniPassword.xaml.cs">
+      <DependentUpon>ZaboravljeniPassword.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
@@ -131,6 +152,14 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="View\QRkod.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Registracija.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="View\Login.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -151,22 +180,12 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="View\QRkod.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="View\ZaboravljeniPassword.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="View\Registracija.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Migrations\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
   </PropertyGroup>
