@@ -26,7 +26,6 @@ namespace TutorFinderApp.View
         public Login()
         {
             this.InitializeComponent();
-            DataContext = new KorisnikVM();
         }
     }
 }

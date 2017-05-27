@@ -95,11 +95,7 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\20170527013814_InitialMigration.cs" />
-    <Compile Include="Migrations\20170527013814_InitialMigration.designer.cs">
-      <DependentUpon>20170527013814_InitialMigration.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\TutorFinderDbContextModelSnapshot.cs" />
+    <Compile Include="Helpers\RelayCommand.cs" />
     <Compile Include="Models\Instruktor.cs" />
     <Compile Include="Models\Klijent.cs" />
     <Compile Include="Models\Predmet.cs" />
@@ -111,6 +107,7 @@
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViewModels\KorisnikVM.cs" />
+    <Compile Include="Helpers\Pomocna.cs" />
     <Compile Include="View\QRkod.xaml.cs">
       <DependentUpon>QRkod.xaml</DependentUpon>
     </Compile>
@@ -185,7 +182,9 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Migrations\" />
+  </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
   </PropertyGroup>

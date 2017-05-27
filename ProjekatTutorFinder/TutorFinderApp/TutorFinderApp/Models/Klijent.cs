@@ -3,13 +3,40 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
+using TutorFinderApp.ViewModels;
 
 namespace TutorFinderApp.Models
 {
-    class Klijent
+    class Klijent : Pomocna
     {
+        protected int _KlijentId;
+        protected List<Termin> _PrijavljeniTermini;
+
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int KlijentId { get; set; }
-        public List<Termin> PrijavljeniTermini { get; set; }
+        public int KlijentId
+        {
+            get { return _KlijentId; }
+            set
+            {
+                if (value != _KlijentId)
+                {
+                    _KlijentId= value;
+                    OnPropertyChanged("KlijentId");
+                }
+            }
+        }
+
+        public List<Termin> PrijavljeniTermini
+        {
+            get { return _PrijavljeniTermini; }
+            set
+            {
+                if (value != _PrijavljeniTermini)
+                {
+                    _PrijavljeniTermini = value;
+                    OnPropertyChanged("_PrijavljeniTermini");
+                }
+            }
+        }
     }
 }
