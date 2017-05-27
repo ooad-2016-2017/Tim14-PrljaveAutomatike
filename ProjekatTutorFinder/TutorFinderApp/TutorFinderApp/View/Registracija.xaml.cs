@@ -26,7 +26,7 @@ namespace TutorFinderApp.View
         public Registracija()
         {
             this.InitializeComponent();
-            this.DataContext = new KorisnikVM();
+            this.DataContext = new RegistracijaVM();
         }
     }
 }

@@ -106,7 +106,7 @@
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ViewModels\KorisnikVM.cs" />
+    <Compile Include="ViewModels\RegistracijaVM.cs" />
     <Compile Include="Helpers\Pomocna.cs" />
     <Compile Include="View\QRkod.xaml.cs">
       <DependentUpon>QRkod.xaml</DependentUpon>
