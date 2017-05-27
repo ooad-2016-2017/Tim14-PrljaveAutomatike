@@ -1,12 +1,6 @@
-﻿
-using Microsoft.Data.Entity;
-using Microsoft.Data.Sqlite;
+﻿using Microsoft.EntityFrameworkCore;
 using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Windows.Storage;
 
 namespace TutorFinderApp.Models
@@ -15,7 +9,7 @@ namespace TutorFinderApp.Models
     {
         public DbSet<Klijent> Klijenti { get; set; }
         public DbSet<Instruktor> Instruktori { get; set; }
-        public DbSet<Predmet> Predmeti { get; set; }
+        //public DbSet<Predmet> Predmeti { get; set; }
         public DbSet<Termin> Termini { get; set; }
 
 
