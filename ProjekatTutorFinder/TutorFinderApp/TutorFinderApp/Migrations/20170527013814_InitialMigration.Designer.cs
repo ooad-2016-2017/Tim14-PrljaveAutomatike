@@ -8,7 +8,7 @@ using TutorFinderApp.Models;
 namespace TutorFinderApp.Migrations
 {
     [DbContext(typeof(TutorFinderDbContext))]
-    [Migration("20170527013359_InitialMigration")]
+    [Migration("20170527013814_InitialMigration")]
     partial class InitialMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -46,7 +46,8 @@ namespace TutorFinderApp.Migrations
                     b.Property<int>("PredmetId")
                         .ValueGeneratedOnAdd();
 
-                    b.Property<string>("ImePredmeta");
+                    b.Property<string>("ImePredmeta")
+                        .IsRequired();
 
                     b.HasKey("PredmetId");
 

@@ -45,7 +45,8 @@ namespace TutorFinderApp.Migrations
                     b.Property<int>("PredmetId")
                         .ValueGeneratedOnAdd();
 
-                    b.Property<string>("ImePredmeta");
+                    b.Property<string>("ImePredmeta")
+                        .IsRequired();
 
                     b.HasKey("PredmetId");
 

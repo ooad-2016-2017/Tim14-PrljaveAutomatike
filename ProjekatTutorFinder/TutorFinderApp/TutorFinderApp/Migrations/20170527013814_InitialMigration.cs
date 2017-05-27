@@ -40,7 +40,7 @@ namespace TutorFinderApp.Migrations
                 {
                     PredmetId = table.Column<int>(nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
-                    ImePredmeta = table.Column<string>(nullable: true)
+                    ImePredmeta = table.Column<string>(nullable: false)
                 },
                 constraints: table =>
                 {
