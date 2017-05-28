@@ -7,7 +7,7 @@ using System.ComponentModel;
 using System.Security.Cryptography;
 
 namespace TutorFinderApp.ViewModels
-{
+{ 
     public abstract class ViewModelBase : INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged;

@@ -14,6 +14,7 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 using TutorFinderApp.ViewModels;
+using TutorFinderApp.Helpers;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -28,8 +29,8 @@ namespace TutorFinderApp.View
         public Registracija()
         {
             this.InitializeComponent();
-            var VmObj = new RegistracijaVM(this.Frame);
-            this.DataContext = VmObj;
+            var registracijaVM = new RegistracijaVM(new NavigationService());
+            DataContext = registracijaVM;
         }
     }
 }

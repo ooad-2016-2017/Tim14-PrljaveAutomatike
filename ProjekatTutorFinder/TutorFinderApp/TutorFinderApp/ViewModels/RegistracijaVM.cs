@@ -11,11 +11,12 @@ using TutorFinderApp.Helpers;
 using System.Windows.Input;
 using System.Security.Cryptography;
 using TutorFinderApp.View;
+using System.ComponentModel;
 
 
 namespace TutorFinderApp.ViewModels
 {
-    class RegistracijaVM : ViewModelBase 
+    class RegistracijaVM : ViewModelBase
     {
         public RelayCommand RegistracijaCommand { get; set; }
         public string Ime { get; set; }
@@ -26,19 +27,19 @@ namespace TutorFinderApp.ViewModels
         public string BrojTel { get; set; }
         public string Grad { get; set; }
 
-        public Windows.UI.Xaml.Controls.Frame frameObject { get; set; }
+        private NavigationService navigationService;
 
-        public RegistracijaVM(Windows.UI.Xaml.Controls.Frame _frameObject)
+
+        public RegistracijaVM(NavigationService _navigationService)
         {
             RegistracijaCommand = new RelayCommand(IzvrsiRegistraciju);
-            frameObject = _frameObject;
+            navigationService = _navigationService;
         }
 
         private void IzvrsiRegistraciju(object _param)
         {
             Password = GenerateHashFromString(((Windows.UI.Xaml.Controls.PasswordBox)_param).Password.ToString());
-            frameObject.Navigate(typeof(Login));
-            
+            navigationService.Navigate(typeof(Login));
             //obaviti proces registracije
         }
 
