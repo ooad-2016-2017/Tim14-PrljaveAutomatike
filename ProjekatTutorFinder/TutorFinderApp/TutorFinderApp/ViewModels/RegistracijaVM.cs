@@ -14,7 +14,7 @@ using System.Security.Cryptography;
 
 namespace TutorFinderApp.ViewModels
 {
-    class RegistracijaVM : Pomocna
+    class RegistracijaVM : Pomocna, 
     {
         public RelayCommand RegistracijaCommand { get; set; }
 
@@ -33,14 +33,10 @@ namespace TutorFinderApp.ViewModels
 
         private void IzvrsiRegistraciju(object _param)
         {
-            Windows.UI.Xaml.Controls.PasswordBox passwordBox = (Windows.UI.Xaml.Controls.PasswordBox)_param;
+            Password = GenerateHashFromString(((Windows.UI.Xaml.Controls.PasswordBox)_param).Password.ToString());
 
-            Password = GenerateHashFromString(passwordBox.Password.ToString());
-
-            using(var dbObj = new TutorFinderDbContext())
-            {
-
-            }
+            
+            //obaviti proces registracije
         }
 
     }

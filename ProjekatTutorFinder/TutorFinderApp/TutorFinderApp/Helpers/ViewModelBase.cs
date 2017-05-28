@@ -21,6 +21,7 @@ namespace TutorFinderApp.ViewModels
             }
         }
 
+        //nema veze sa viewmodelom ali je korisno da bude tu
         protected string GenerateHashFromString(string _string)
         {
             MD5 md5Hash = MD5.Create();
