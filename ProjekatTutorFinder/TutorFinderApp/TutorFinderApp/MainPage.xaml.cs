@@ -30,7 +30,7 @@ namespace TutorFinderApp
 
         public void OnPageLoad(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(Registracija));
+            this.Frame.Navigate(typeof(Login));
         }
     }
 }
