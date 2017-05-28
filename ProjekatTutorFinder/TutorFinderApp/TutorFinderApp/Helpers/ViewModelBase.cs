@@ -20,7 +20,8 @@ namespace TutorFinderApp.ViewModels
                 this.PropertyChanged(this, e);
             }
         }
-         
+        
+        protected virtual void SetProperty<T>(ref T property, T value, string propertyName) 
         //nema veze sa viewmodelom ali je korisno da bude tu
         protected string GenerateHashFromString(string _string)
         {
