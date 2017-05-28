@@ -7,7 +7,7 @@ using TutorFinderApp.ViewModels;
 
 namespace TutorFinderApp.Models
 {
-    class Instruktor : Pomocna
+    class Instruktor : Korisnik
     {
         protected int _InstruktorId;
         protected double _Ocjena;

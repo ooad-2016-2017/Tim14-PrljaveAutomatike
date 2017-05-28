@@ -7,7 +7,7 @@ using TutorFinderApp.ViewModels;
 
 namespace TutorFinderApp.Models
 {
-    class Klijent : Pomocna
+    class Klijent : Korisnik
     {
         protected int _KlijentId;
         protected List<Termin> _PrijavljeniTermini;

@@ -33,7 +33,7 @@ namespace TutorFinderApp.ViewModels
 
                 //pretraga da li ime i password postoje u bazi
 
-                //foreach (var k in Klijenti) {
+               // foreach (var k in Klijenti) {
                 //k.Ime}
 
             }
