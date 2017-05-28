@@ -5,7 +5,7 @@ using TutorFinderApp.ViewModels;
 
 namespace TutorFinderApp.Models
 {
-    class Korisnik : Pomocna 
+    class Korisnik
     {
         protected string _Ime;
         protected string _Prezime;
@@ -20,7 +20,6 @@ namespace TutorFinderApp.Models
                                     if(value != _Ime)
                                     {
                                         _Ime = value;
-                                        OnPropertyChanged("Ime");
                                     }
                                 }
                           }
@@ -33,7 +32,6 @@ namespace TutorFinderApp.Models
                                     if (value != _Prezime)
                                     {
                                         _Prezime = value;
-                                        OnPropertyChanged("Prezime");
                                     }
                                 }
                             }
@@ -46,7 +44,6 @@ namespace TutorFinderApp.Models
                                     if (value != _Email)
                                     {
                                         _Email = value;
-                                        OnPropertyChanged("Email");
                                     }
                                 }
                             }
@@ -59,7 +56,7 @@ namespace TutorFinderApp.Models
                                     if (value != _Username)
                                     {
                                         _Username = value;
-                                        OnPropertyChanged("Username");
+                      
                                     }
                                 }
                             }
@@ -72,7 +69,7 @@ namespace TutorFinderApp.Models
                                     if (value != _Password)
                                     {
                                         _Prezime = value;
-                                        OnPropertyChanged("Password");
+                                    
                                     }
                                 }
                             }
@@ -85,7 +82,7 @@ namespace TutorFinderApp.Models
                                     if (value != _Lokacija)
                                     {
                                         _Lokacija = value;
-                                        OnPropertyChanged("Lokacija");
+                                      
                                     }
                                 }
                             }

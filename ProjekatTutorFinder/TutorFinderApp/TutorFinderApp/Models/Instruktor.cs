@@ -23,7 +23,7 @@ namespace TutorFinderApp.Models
                 if (value != _InstruktorId)
                 {
                     _InstruktorId = value;
-                    OnPropertyChanged("KlijentId");
+ 
                 }
             }
         }
@@ -35,7 +35,7 @@ namespace TutorFinderApp.Models
                 if (value != _Ocjena)
                 {
                     _Ocjena = value;
-                    OnPropertyChanged("Ocjena");
+             
                 }
             }
         }
@@ -47,7 +47,7 @@ namespace TutorFinderApp.Models
                 if (value != _slika)
                 {
                     _slika = value;
-                    OnPropertyChanged("slika");
+                
                 }
             }
         }
@@ -59,7 +59,7 @@ namespace TutorFinderApp.Models
                 if (value != _PrijavljeniTermini)
                 {
                     _PrijavljeniTermini = value;
-                    OnPropertyChanged("PrijavljeniTermini");
+                  
                 }
             }
         }
