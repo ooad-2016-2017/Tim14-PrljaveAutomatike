@@ -8,7 +8,7 @@ using System.Security.Cryptography;
 
 namespace TutorFinderApp.ViewModels
 {
-    public abstract class Pomocna : INotifyPropertyChanged
+    public abstract class ViewModelBase : INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged;
 
@@ -20,7 +20,7 @@ namespace TutorFinderApp.ViewModels
                 this.PropertyChanged(this, e);
             }
         }
-
+         
         //nema veze sa viewmodelom ali je korisno da bude tu
         protected string GenerateHashFromString(string _string)
         {
