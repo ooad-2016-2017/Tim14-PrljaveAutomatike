@@ -32,6 +32,7 @@ namespace TutorFinderApp.ViewModels
 
         public RegistracijaVM(NavigationService _navigationService)
         {
+            //kako se kreira komanda za neki button i slicno
             RegistracijaCommand = new RelayCommand(IzvrsiRegistraciju);
             navigationService = _navigationService;
         }
@@ -39,7 +40,15 @@ namespace TutorFinderApp.ViewModels
         private void IzvrsiRegistraciju(object _param)
         {
             Password = GenerateHashFromString(((Windows.UI.Xaml.Controls.PasswordBox)_param).Password.ToString());
+
+            //primjer kako se postavlja vrijednost nekog objekta u viewu 
+            Ime = "HARIS";
+            OnPropertyChanged("Ime");
+
+            //primjer kako se prebacuje na drugi view
             navigationService.Navigate(typeof(Login));
+
+
             //obaviti proces registracije
         }
 
