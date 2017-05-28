@@ -9,6 +9,8 @@ using TutorFinderApp.ViewModels;
 using TutorFinderApp.Models;
 using TutorFinderApp.Helpers;
 using System.Windows.Input;
+using System.Security.Cryptography;
+
 
 namespace TutorFinderApp.ViewModels
 {
@@ -29,11 +31,16 @@ namespace TutorFinderApp.ViewModels
             RegistracijaCommand = new RelayCommand(IzvrsiRegistraciju);
         }
 
-        private void IzvrsiRegistraciju()
+        private void IzvrsiRegistraciju(object _param)
         {
-            //Ime = "OK";
-            //OnPropertyChanged("Ime"); //ok bindinzi
-            //REST?
+            Windows.UI.Xaml.Controls.PasswordBox passwordBox = (Windows.UI.Xaml.Controls.PasswordBox)_param;
+
+            Password = GenerateHashFromString(passwordBox.Password.ToString());
+
+            using(var dbObj = new TutorFinderDbContext())
+            {
+
+            }
         }
 
     }

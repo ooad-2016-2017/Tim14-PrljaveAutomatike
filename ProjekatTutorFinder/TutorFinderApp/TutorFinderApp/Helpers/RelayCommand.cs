@@ -11,16 +11,16 @@ namespace TutorFinderApp.Helpers
     {
         public event EventHandler CanExecuteChanged;
 
-        private Action methodToExecute;
-        private Func<bool> canExecuteEvaluator;
+        private Action<object> methodToExecute;
+        private Predicate<object> canExecuteEvaluator;
 
-        public RelayCommand(Action methodToExecute, Func<bool> canExecuteEvaluator)
+        public RelayCommand(Action<object> methodToExecute, Predicate<object> canExecuteEvaluator)
         {
             this.methodToExecute = methodToExecute;
             this.canExecuteEvaluator = canExecuteEvaluator;
         }
 
-        public RelayCommand(Action methodToExecute): this(methodToExecute, null)
+        public RelayCommand(Action<object> methodToExecute) : this(methodToExecute, null)
         {
         }
 
@@ -32,13 +32,13 @@ namespace TutorFinderApp.Helpers
             }
             else
             {
-                bool result = this.canExecuteEvaluator.Invoke();
+                bool result = this.canExecuteEvaluator.Invoke(parameter);
                 return result;
             }
         }
         public void Execute(object parameter)
         {
-            this.methodToExecute.Invoke();
+            this.methodToExecute.Invoke(parameter);
         }
     }
 }
