@@ -14,7 +14,7 @@ using System.Security.Cryptography;
 
 namespace TutorFinderApp.ViewModels
 {
-    class RegistracijaVM : Pomocna, 
+    class RegistracijaVM : ViewModelBase 
     {
         public RelayCommand RegistracijaCommand { get; set; }
 
