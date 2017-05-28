@@ -29,8 +29,13 @@ namespace TutorFinderApp.ViewModels
 
             using (var DbObj = new TutorFinderApp.Models.TutorFinderDbContext) {
 
-                var Klijenti = DbObj.Klijenti();
-                if()
+                var Klijenti = DbObj.Klijenti;
+
+                //pretraga da li ime i password postoje u bazi
+
+               // foreach (var k in Klijenti) {
+               // k.Ime}
+
             }
         }
     }
