@@ -34,9 +34,9 @@ namespace TutorFinderApp.ViewModels
                 //pretraga da li ime i password postoje u bazi
 
                 int count = 0;
-                var korisnik = null;
+                Korisnik korisnik = null;
                 foreach (var k in Klijenti) {
-                    if (k.Email = Email && k.Password = Password) { korisnik = k;count = 1; break; } 
+                    if (k.Email == Email && k.Password == Password) { korisnik = k;count = 1; break; } 
                         }
                 
                 //if (korisnik != null && count = 1)
