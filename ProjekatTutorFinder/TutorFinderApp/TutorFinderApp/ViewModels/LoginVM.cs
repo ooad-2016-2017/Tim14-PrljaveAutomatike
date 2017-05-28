@@ -23,18 +23,18 @@ namespace TutorFinderApp.ViewModels
 
         }
 
-        private IzvrsiLogin(object _param) {
+        private void IzvrsiLogin(object _param) {
 
             Password = GenerateHashFromString(((Windows.UI.Xaml.Controls.PasswordBox)_param).Password.ToString());
 
-            using (var DbObj = new TutorFinderApp.Models.TutorFinderDbContext) {
+            using (var DbObj = new TutorFinderApp.Models.TutorFinderDbContext()) {
 
                 var Klijenti = DbObj.Klijenti;
 
                 //pretraga da li ime i password postoje u bazi
 
-               // foreach (var k in Klijenti) {
-               // k.Ime}
+                //foreach (var k in Klijenti) {
+                //k.Ime}
 
             }
         }
