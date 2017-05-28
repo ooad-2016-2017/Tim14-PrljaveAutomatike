@@ -9,7 +9,7 @@ using TutorFinderApp.Models;
 
 namespace TutorFinderApp.ViewModels
 {
-    class LoginVM : Pomocna 
+    class LoginVM : ViewModelBase 
     {
         public RelayCommand LoginCommand { get; set; }
 
