@@ -33,9 +33,23 @@ namespace TutorFinderApp.ViewModels
 
                 //pretraga da li ime i password postoje u bazi
 
-               // foreach (var k in Klijenti) {
-                //k.Ime}
-
+                int count = 0;
+                var korisnik = null;
+                foreach (var k in Klijenti) {
+                    if (k.Email = Email && k.Password = Password) { korisnik = k;count = 1; break; } 
+                        }
+                
+                //if (korisnik != null && count = 1)
+                //{
+                 //   this.Frame.Navigate(typeof(MainPage), korisnik);
+                //}
+                //else
+                //{
+                 //   var dialog = new MessageDialog("Pogrešno korisničko ime/šifra!", "Neuspješna
+                  // prijava");
+                   
+                  //  await dialog.ShowAsync();
+                //}
             }
         }
     }
