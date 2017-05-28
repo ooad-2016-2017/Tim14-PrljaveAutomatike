@@ -26,11 +26,11 @@
         <PasswordBox x:Name="passwordBox" Margin="593,345,470,0" VerticalAlignment="Top"/>
         <TextBox x:Name="textBox1_Copy" Margin="737,393,470,295" TextWrapping="Wrap" Text=""/>
         <TextBlock x:Name="textBlock4_Copy" Margin="680,393,552,295" TextWrapping="Wrap" Text="Do:" FontSize="18"/>
-        <Button x:Name="button" Content="Dodaj termin" HorizontalAlignment="Stretch" Margin="467,513,686,0" VerticalAlignment="Top" FontSize="18"/>
+        <Button x:Name="button" Content="Dodaj termin" HorizontalAlignment="Stretch" Margin="467,513,686,0" VerticalAlignment="Top" FontSize="18" Foreground="White" Background="#FF890000"/>
         <TextBlock x:Name="textBlock3_Copy1" Margin="478,308,642,380" TextWrapping="Wrap" Text="Instrukt ORIC" FontSize="18"/>
-        <Button x:Name="button_Copy" Content="Moj QRkod" HorizontalAlignment="Left" Margin="650,255,0,0" VerticalAlignment="Top" Background="{ThemeResource CheckBoxBorderThemeBrush}" Width="160"/>
-        <Button x:Name="button_Copy1" Content="Ukloni termin" HorizontalAlignment="Stretch" Margin="680,513,470,0" VerticalAlignment="Top" FontSize="18"/>
-        <Button x:Name="button_Copy2" Content="Promijeni avatar" HorizontalAlignment="Stretch" Margin="650,197,470,0" VerticalAlignment="Top" FontSize="18"/>
+        <Button x:Name="button_Copy" Content="Moj QRkod" HorizontalAlignment="Left" Margin="650,255,0,0" VerticalAlignment="Top" Background="#FF890000" Width="160" Foreground="White"/>
+        <Button x:Name="button_Copy1" Content="Ukloni termin" HorizontalAlignment="Stretch" Margin="680,513,470,0" VerticalAlignment="Top" FontSize="18" Background="#FF890000" Foreground="#FFFFF0F0"/>
+        <Button x:Name="button_Copy2" Content="Promijeni avatar" HorizontalAlignment="Stretch" Margin="650,197,470,0" VerticalAlignment="Top" FontSize="18" Foreground="#FFF9F9F9" Background="#FF890000"/>
         <Image x:Name="image" Margin="478,167,686,437" RenderTransformOrigin="-0.036,-0.26" Stretch="Fill" Source="http://images.clipartpanda.com/father-face-clipart-1195444795826861756Gerald_G_Man_Face_4_-_World_Label.svg.hi.png"/>
 
     </Grid>

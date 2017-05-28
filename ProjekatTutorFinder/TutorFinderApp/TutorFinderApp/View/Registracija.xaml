@@ -16,7 +16,7 @@
         <CheckBox x:Name="checkBox" Content="Student/ucenik" HorizontalAlignment="Stretch" Margin="445,581,591,0" VerticalAlignment="Top" FontSize="18"/>
         <CheckBox x:Name="checkBox1" Content="Instruktor" HorizontalAlignment="Stretch" Margin="735,581,420,107" VerticalAlignment="Stretch" FontSize="18"/>
         <TextBlock x:Name="textBlock5" Margin="473,188,473,0" TextWrapping="Wrap" Text="Molimo Vas da unesete sljedeće podatke:" VerticalAlignment="Top" FontSize="18"/>
-        <Button x:Name="button" Content="Registruj se" HorizontalAlignment="Stretch" Margin="584,643,584,0" VerticalAlignment="Top" FontSize="18"/>
+        <Button x:Name="button" Content="Registruj se" HorizontalAlignment="Stretch" Margin="584,643,584,0" VerticalAlignment="Top" FontSize="18" Background="#FF890000" Foreground="#FFFFF9F9"/>
         <TextBlock x:Name="textBlock6" Margin="445,533,787,155" TextWrapping="Wrap" Text="Grad" FontSize="18" RenderTransformOrigin="0.576,0.24"/>
         <TextBox x:Name="textBox1" Margin="560,245,445,443" TextWrapping="Wrap" Text=""/>
         <TextBox x:Name="textBox1_Copy" Margin="560,293,445,395" TextWrapping="Wrap" Text=""/>

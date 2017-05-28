@@ -28,7 +28,7 @@
         <CalendarDatePicker HorizontalAlignment="Left" Margin="814,199,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.016,0.5"/>
         <TextBlock x:Name="textBlock_Copy5" HorizontalAlignment="Left" Margin="559,171,0,0" TextWrapping="Wrap" Text="Studnet" VerticalAlignment="Top" FontSize="18" Height="24" Width="150" RenderTransformOrigin="0.618,0.542"/>
         <TextBlock x:Name="textBlock_Copy6" HorizontalAlignment="Left" Margin="559,220,0,0" TextWrapping="Wrap" Text="Studentić" VerticalAlignment="Top" FontSize="18" Height="24" Width="150"/>
-        <TextBlock x:Name="textBlock_Copy7" HorizontalAlignment="Left" Margin="559,276,0,0" TextWrapping="Wrap" Text="123/456-789" VerticalAlignment="Top" FontSize="18" Height="24" Width="150"/>
+        <TextBlock x:Name="textBlock_Copy7" HorizontalAlignment="Left" Margin="509,276,0,0" TextWrapping="Wrap" Text="123/456-789" VerticalAlignment="Top" FontSize="18" Height="24" Width="150"/>
         <TextBlock x:Name="textBlock_Copy8" HorizontalAlignment="Left" Margin="559,332,0,0" TextWrapping="Wrap" Text="sstudentic@etf.unsa.ba" VerticalAlignment="Top" FontSize="18" Height="24" Width="232"/>
         <TextBlock x:Name="textBlock_Copy9" HorizontalAlignment="Left" Margin="559,384,0,0" TextWrapping="Wrap" Text="Sarajevo" VerticalAlignment="Top" FontSize="18" Height="24" Width="150"/>
         <TextBlock x:Name="textBlock1" Margin="420,67,420,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="78" FontFamily="Californian FB" FontWeight="Bold">
