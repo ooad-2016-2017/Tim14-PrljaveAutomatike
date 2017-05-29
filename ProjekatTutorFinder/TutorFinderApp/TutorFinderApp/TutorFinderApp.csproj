@@ -11,8 +11,8 @@
     <AssemblyName>TutorFinderApp</AssemblyName>
     <DefaultLanguage>en-US</DefaultLanguage>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
-    <TargetPlatformVersion>10.0.14393.0</TargetPlatformVersion>
-    <TargetPlatformMinVersion>10.0.14393.0</TargetPlatformMinVersion>
+    <TargetPlatformVersion>10.0.10586.0</TargetPlatformVersion>
+    <TargetPlatformMinVersion>10.0.10240.0</TargetPlatformMinVersion>
     <MinimumVisualStudioVersion>14</MinimumVisualStudioVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{A5A43C5B-DE2A-4C0C-9213-0A381AF9435A};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -111,6 +111,18 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViewModels\LoginVM.cs" />
     <Compile Include="ViewModels\RegistracijaVM.cs" />
+    <Compile Include="View\PocetnaZaInstr.xaml.cs">
+      <DependentUpon>PocetnaZaInstr.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\InfoInstruktor.xaml.cs">
+      <DependentUpon>InfoInstruktor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\InfoStudent.xaml.cs">
+      <DependentUpon>InfoStudent.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\ConfigInstr.xaml.cs">
+      <DependentUpon>ConfigInstr.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\QRkod.xaml.cs">
       <DependentUpon>QRkod.xaml</DependentUpon>
     </Compile>
@@ -122,6 +134,9 @@
     </Compile>
     <Compile Include="View\SlanjeZahtjeva.xaml.cs">
       <DependentUpon>SlanjeZahtjeva.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\PocetnaZaStud.xaml.cs">
+      <DependentUpon>PocetnaZaStud.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\ZaboravljeniPassword.xaml.cs">
       <DependentUpon>ZaboravljeniPassword.xaml</DependentUpon>
@@ -152,6 +167,22 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="View\PocetnaZaInstr.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\InfoInstruktor.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\InfoStudent.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\ConfigInstr.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="View\QRkod.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -164,19 +195,11 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="View\InfoStudent.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="View\InfoInstruktor.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="View\ConfigInstr.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="View\SlanjeZahtjeva.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\PocetnaZaStud.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

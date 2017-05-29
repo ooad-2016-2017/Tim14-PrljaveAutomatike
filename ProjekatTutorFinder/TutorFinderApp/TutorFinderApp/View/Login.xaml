@@ -16,7 +16,7 @@
         <TextBlock x:Name="textBlock2" Margin="559,463,559,0" TextWrapping="Wrap" Text="Zaboravili ste password?" VerticalAlignment="Top"/>
         <TextBlock x:Name="textBlock3" Height="28" Margin="601,518,601,0" TextWrapping="Wrap" Text="Registruj se" VerticalAlignment="Top"/>
         <PasswordBox x:Name="passwordBox" Margin="551,298,445,0" VerticalAlignment="Top" />
-        <TextBlock x:Name="textBlock_Copy" HorizontalAlignment="Left" Margin="445,298,0,390" TextWrapping="Wrap" Width="70" FocusVisualSecondaryBrush="#99F01B1B">
+        <TextBlock x:Name="textBlock_Copy" HorizontalAlignment="Left" Margin="445,298,0,390" TextWrapping="Wrap" Width="70">
             <Run Text="password"/>
             <LineBreak/>
             <Run/>
