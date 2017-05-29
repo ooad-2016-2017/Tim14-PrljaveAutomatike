@@ -86,5 +86,10 @@ namespace TutorFinderApp.Models
                                     }
                                 }
                             }
+
+        public Korisnik(string ime, string prezime, string email, string password, string brojTel, Tuple<double, double> lokacija)
+        {
+
+        }
     }
 }

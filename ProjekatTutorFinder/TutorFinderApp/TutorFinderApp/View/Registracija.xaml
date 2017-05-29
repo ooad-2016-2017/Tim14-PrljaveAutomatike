@@ -13,8 +13,8 @@
         <TextBlock x:Name="textBlock2" Margin="445,341,750,347" TextWrapping="Wrap" Text="Username" RenderTransformOrigin="0.569,-0.125" FontSize="18"/>
         <TextBlock x:Name="textBlock3" Margin="445,389,763,299" TextWrapping="Wrap" Text="E-mail" FontSize="18"/>
         <TextBlock x:Name="textBlock4" Margin="445,485,729,203" TextWrapping="Wrap" Text="Broj telefona" FontSize="18"/>
-        <CheckBox x:Name="checkBox" Content="Student/ucenik" HorizontalAlignment="Stretch" Margin="445,581,591,0" VerticalAlignment="Top" FontSize="18"/>
-        <CheckBox x:Name="checkBox1" Content="Instruktor" HorizontalAlignment="Stretch" Margin="735,581,420,107" VerticalAlignment="Stretch" FontSize="18"/>
+        <CheckBox x:Name="checkBox" Content="Student/ucenik" Command="{Binding checkCommand}" CommandParameter="{Binding ElementName=checkBox1}" IsChecked="{Binding klijent}"   HorizontalAlignment="Stretch" Margin="445,581,591,0" VerticalAlignment="Top" FontSize="18"/>
+        <CheckBox x:Name="checkBox1" Content="Instruktor" Command="{Binding checkCommand}" CommandParameter="{Binding ElementName=checkBox}" IsChecked="{Binding instruktor}" HorizontalAlignment="Stretch" Margin="735,581,420,107" VerticalAlignment="Stretch" FontSize="18"/>
         <TextBlock x:Name="textBlock5" Margin="473,188,473,0" TextWrapping="Wrap" Text="Molimo Vas da unesete sljedeće podatke:" VerticalAlignment="Top" FontSize="18"/>
         <Button x:Name="button" Content="Registruj se" Command ="{Binding RegistracijaCommand}" CommandParameter="{Binding ElementName=passwordBox}" HorizontalAlignment="Stretch" Margin="584,643,584,0" VerticalAlignment="Top" FontSize="18"/>
         <TextBlock x:Name="textBlock6" Margin="445,533,787,155" TextWrapping="Wrap" Text="Grad" FontSize="18" RenderTransformOrigin="0.576,0.24"/>

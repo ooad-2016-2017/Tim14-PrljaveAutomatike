@@ -11,7 +11,6 @@ using TutorFinderApp.Helpers;
 using System.Windows.Input;
 using System.Security.Cryptography;
 using TutorFinderApp.View;
-using System.ComponentModel;
 
 
 namespace TutorFinderApp.ViewModels
@@ -19,6 +18,8 @@ namespace TutorFinderApp.ViewModels
     class RegistracijaVM : ViewModelBase
     {
         public RelayCommand RegistracijaCommand { get; set; }
+        public RelayCommand checkCommand { get; set; }
+        public bool klijent, instruktor, toggle = true;
         public string Ime { get; set; }
         public string Prezime { get; set; }
         public string Username { get; set; }
@@ -29,24 +30,69 @@ namespace TutorFinderApp.ViewModels
 
         private NavigationService navigationService;
 
-
         public RegistracijaVM(NavigationService _navigationService)
         {
-            //kako se kreira komanda za neki button i slicno
             RegistracijaCommand = new RelayCommand(IzvrsiRegistraciju);
+            checkCommand = new RelayCommand(postaviTipKorisnika);
             navigationService = _navigationService;
         }
 
+        private void postaviTipKorisnika(object _param)
+        {
+            toggle = !toggle;
+            ((Windows.UI.Xaml.Controls.CheckBox)_param).IsEnabled = toggle;
+        }
+
+       
+        //-----------------------------------------------------------------
         private void IzvrsiRegistraciju(object _param)
         {
-            Password = GenerateHashFromString(((Windows.UI.Xaml.Controls.PasswordBox)_param).Password.ToString());
+            using (var dbCon = new TutorFinderDbContext())
+            {
+                if (klijent)
+                {
+                    if(dbCon.Klijenti.Where(b => b.Email == $"{Email}") != null)
+                    {
+                        //provjeriti ostala polja
+                        dbCon.Klijenti.Add(new Klijent(Ime, Prezime, Email, GenerateHashFromString(((Windows.UI.Xaml.Controls.PasswordBox)_param).Password.ToString()), BrojTel, new Tuple<double, double>(0,0)));
+                        //pozvat konstruktordbCon.Klijenti.Add(Klijent())
+                    }
+                }
+                else
+                {
+                    if (dbCon.Instruktori.Where(b => b.Email == $"{Email}") != null)
+                    {
+                        //provjeriti ostala polja
+                        //pozvat konstruktordbCon.Klijenti.Add(Instruktori())
+                        //zahtjev za sliku
+                    }
+                }
+            }
+
+            /*using (var dbCon = new TutorFinderDbContext())
+            {
+                if(dbCon.Klijenti.Where(b => b.Email == $"{Email}") != null)
+                    //postoji korisnik sa navedenim emailom
+                else
+                {
+                    //provjeriti je li sve popunjeno
+                    //upisati u bazu novog korisnika
+                    //Password = GenerateHashFromString(((Windows.UI.Xaml.Controls.PasswordBox)_param).Password.ToString());
+                    navigationService.Navigate(typeof(Login));
+                }
+            }*/
+        //------------------------------------------------------------------
+
+
+
+
 
             //primjer kako se postavlja vrijednost nekog objekta u viewu 
-            Ime = "HARIS";
-            OnPropertyChanged("Ime");
+            /*Ime = "HARIS";
+            OnPropertyChanged("Ime");*/
 
             //primjer kako se prebacuje na drugi view
-            navigationService.Navigate(typeof(Login));
+            /*navigationService.Navigate(typeof(Login));*/
 
 
             //obaviti proces registracije

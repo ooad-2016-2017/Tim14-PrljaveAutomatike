@@ -38,5 +38,7 @@ namespace TutorFinderApp.Models
                 }
             }
         }
+
+        public Klijent(string ime, string prezime, string email, string password, string brojTel, Tuple<double, double> lokacija): base(ime,prezime,email,password,brojTel,lokacija){}
     }
 }

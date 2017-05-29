@@ -9,7 +9,7 @@ namespace TutorFinderApp.Models
     {
         public DbSet<Klijent> Klijenti { get; set; }
         public DbSet<Instruktor> Instruktori { get; set; }
-        //public DbSet<Predmet> Predmeti { get; set; }
+        public DbSet<Predmet> Predmeti { get; set; }
         public DbSet<Termin> Termini { get; set; }
 
 
