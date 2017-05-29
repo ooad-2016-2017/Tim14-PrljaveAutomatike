@@ -16,6 +16,13 @@ namespace TutorFinderApp.ViewModels
         public string Email { get; set; }
         public string Password { get; set; }
 
+        private NavigationService navigationService;
+
+        public LoginVM(NavigationService _navigationService)
+        {
+            LoginCommand = new RelayCommand(IzvrsiLogin);
+            navigationService = _navigationService;
+        }
 
         public LoginVM()
         {
@@ -38,19 +45,22 @@ namespace TutorFinderApp.ViewModels
                 foreach (var k in Klijenti) {
                     if (k.Email == Email && k.Password == Password) { korisnik = k;count = 1; break; } 
                         }
-                
-                //if (korisnik != null && count = 1)
-                //{
-                 //   this.Frame.Navigate(typeof(MainPage), korisnik);
-                //}
-                //else
-                //{
-                 //   var dialog = new MessageDialog("Pogrešno korisničko ime/šifra!", "Neuspješna
-                  // prijava");
-                   
-                  //  await dialog.ShowAsync();
-                //}
-            }
+
+
+        if (korisnik != null && count == 1)
+        {
+            //  navigationService.Navigate(typeof(InfoStudent),korisnik);
+            // ovdje treba navigirati na stranicu main page korisnika ako je pronađen u bazi
+            // 
+        }
+        //else
+        //{
+        //   var dialog = new MessageDialog("Pogrešno korisničko ime/šifra!", "Neuspješna
+        // prijava");
+
+        //  await dialog.ShowAsync();
+        //}
+    }
         }
     }
 }

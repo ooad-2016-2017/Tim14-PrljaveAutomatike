@@ -8,6 +8,7 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
         <TextBlock x:Name="textBlock" Margin="445,245,804,443" TextWrapping="Wrap" Text="Ime" FontSize="18"/>
         <TextBlock x:Name="textBlock1" Margin="445,293,763,395" TextWrapping="Wrap" Text="Prezime" FontSize="18"/>
         <TextBlock x:Name="textBlock2" Margin="445,341,750,347" TextWrapping="Wrap" Text="Username" RenderTransformOrigin="0.569,-0.125" FontSize="18"/>
@@ -32,6 +33,6 @@
             <Run Foreground="#FF890000" Text="Fi"/>
             <Run Text="nder"/>
         </TextBlock>
-
+        
     </Grid>
 </Page>
