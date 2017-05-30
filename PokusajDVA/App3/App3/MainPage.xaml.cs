@@ -26,7 +26,6 @@ namespace TutorFinderApp
         public MainPage()
         {
             this.InitializeComponent();
-            Frame.Navigate(typeof(Registracija));
         }
     }
 }
