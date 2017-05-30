@@ -10,7 +10,7 @@ using TutorFinderApp.Models;
 using TutorFinderApp.Helpers;
 using System.Windows.Input;
 using Windows.Security.Cryptography.Core;
-using TutorFinderApp.View;
+using App3.View;
 using Windows.Security.Cryptography;
 using Windows.Storage.Streams;
 
