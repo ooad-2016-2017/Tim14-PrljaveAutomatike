@@ -190,7 +190,6 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-<<<<<<< HEAD
   <Page Include="View\ZaboravljeniPassword.xaml">
     <SubType>Designer</SubType>
     <Generator>MSBuild:Compile</Generator>
@@ -206,11 +205,10 @@
     <Page Include="View\Registracija.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
-=======
+    </Page>
     <Page Include="View\ZaboravljeniPassword.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
->>>>>>> 92d480b27ac15587d18ef3b8de8906b3569bd9b7
     </Page>
   </ItemGroup>
   <ItemGroup />
