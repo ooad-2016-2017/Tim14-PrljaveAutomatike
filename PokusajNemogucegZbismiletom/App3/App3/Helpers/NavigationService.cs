@@ -22,6 +22,7 @@ namespace TutorFinderApp.Helpers
             frame.Navigate(page, parameter);
         }
 
+
         public void GoBack()
         {
             var frame = (Frame)Window.Current.Content;
