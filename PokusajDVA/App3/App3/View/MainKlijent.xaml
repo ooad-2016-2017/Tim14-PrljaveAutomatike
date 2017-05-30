@@ -24,17 +24,12 @@
             <SplitView.Content>
                 <Grid>
                     <StackPanel>
-<<<<<<< HEAD
-                        <ListBox ItemsSource="{Binding lista, UpdateSourceTrigger=PropertyChanged}" >
-=======
                         <ListBox Width="200" ItemsSource="{Binding lista, UpdateSourceTrigger=PropertyChanged}" >
->>>>>>> 5c9822c128b679a55f57877119243a5902fffe77
-                            
-                        </ListBox>
+
+                            </ListBox>
                     </StackPanel>
                 </Grid>
             </SplitView.Content>
         </SplitView>
-
     </Grid>
 </Page>
