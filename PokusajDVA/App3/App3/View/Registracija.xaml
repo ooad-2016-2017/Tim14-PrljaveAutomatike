@@ -7,8 +7,6 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-
-
     <RelativePanel Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <RelativePanel Margin="420,67,425,41">
 
@@ -40,5 +38,4 @@
         </RelativePanel>
 
     </RelativePanel>
-
 </Page>

@@ -21,19 +21,11 @@
                 </StackPanel>
             </SplitView.Pane>
 
-            <SplitView.Content>
-                <Grid>
-                    <StackPanel>
-<<<<<<< HEAD
-                        <ListBox ItemsSource="{Binding lista, UpdateSourceTrigger=PropertyChanged}" >
-=======
-                        <ListBox Width="200" ItemsSource="{Binding lista, UpdateSourceTrigger=PropertyChanged}" >
->>>>>>> 5c9822c128b679a55f57877119243a5902fffe77
-                            
-                        </ListBox>
-                    </StackPanel>
-                </Grid>
-            </SplitView.Content>
+            <Grid>
+                <StackPanel>
+                    <ListBox Width="200" ItemsSource="{Binding lista, UpdateSourceTrigger=PropertyChanged}"/>
+                </StackPanel>
+            </Grid>
         </SplitView>
 
     </Grid>
