@@ -12,10 +12,11 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using TutorFinderApp.ViewModels;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
-namespace App3.View
+namespace TutorFinderApp.View
 {
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
@@ -25,6 +26,7 @@ namespace App3.View
         public Registracija()
         {
             this.InitializeComponent();
+            
         }
     }
 }

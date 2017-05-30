@@ -7,8 +7,8 @@
     <ProjectGuid>{950BAAE4-F990-4726-8359-556C4C0704FB}</ProjectGuid>
     <OutputType>AppContainerExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>App3</RootNamespace>
-    <AssemblyName>App3</AssemblyName>
+    <RootNamespace>TutorFinderApp</RootNamespace>
+    <AssemblyName>TutorFinderApp</AssemblyName>
     <DefaultLanguage>en-US</DefaultLanguage>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
     <TargetPlatformVersion>10.0.10586.0</TargetPlatformVersion>
