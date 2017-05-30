@@ -112,7 +112,6 @@
     <Compile Include="ViewModels\KlijentVm.cs" />
     <Compile Include="ViewModels\LoginVM.cs" />
     <Compile Include="ViewModels\RegistracijaVM.cs" />
-<<<<<<< HEAD
     <Compile Include="View\ConfigInstruktor.xaml.cs">
       <DependentUpon>ConfigInstruktor.xaml</DependentUpon>
     </Compile>
@@ -122,8 +121,6 @@
     <Compile Include="View\InfoStudent.xaml.cs">
       <DependentUpon>InfoStudent.xaml</DependentUpon>
     </Compile>
-=======
->>>>>>> 628e64cdaec87cfb1fe4f3c614ae24d92c4b1b7c
     <Compile Include="View\Login.xaml.cs">
       <DependentUpon>Login.xaml</DependentUpon>
     </Compile>
@@ -133,15 +130,12 @@
     <Compile Include="View\Registracija.xaml.cs">
       <DependentUpon>Registracija.xaml</DependentUpon>
     </Compile>
-<<<<<<< HEAD
     <Compile Include="View\SlanjeZahtjeva.xaml.cs">
       <DependentUpon>SlanjeZahtjeva.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\ZaboravljeniPassword.xaml.cs">
       <DependentUpon>ZaboravljeniPassword.xaml</DependentUpon>
     </Compile>
-=======
->>>>>>> 628e64cdaec87cfb1fe4f3c614ae24d92c4b1b7c
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
@@ -168,7 +162,6 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-<<<<<<< HEAD
     <Page Include="View\ConfigInstruktor.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -197,10 +190,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="View\ZaboravljeniPassword.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-=======
+  <Page Include="View\ZaboravljeniPassword.xaml">
+    <SubType>Designer</SubType>
+    <Generator>MSBuild:Compile</Generator>
+  </Page>
     <Page Include="View\Login.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -212,7 +205,6 @@
     <Page Include="View\Registracija.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
->>>>>>> 628e64cdaec87cfb1fe4f3c614ae24d92c4b1b7c
     </Page>
   </ItemGroup>
   <ItemGroup />

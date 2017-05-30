@@ -24,7 +24,7 @@
             <SplitView.Content>
                 <Grid>
                     <StackPanel>
-                        <ListBox ItemsSource="{Binding lista, UpdateSourceTrigger=PropertyChanged}" >
+                        <ListBox Width="200" ItemsSource="{Binding lista, UpdateSourceTrigger=PropertyChanged}" >
                             
                         </ListBox>
                     </StackPanel>
