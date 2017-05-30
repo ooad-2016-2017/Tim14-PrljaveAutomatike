@@ -20,7 +20,7 @@
             <TextBlock x:Name="textBlock5" Margin="53,121,54,0" TextWrapping="Wrap" Text="Molimo Vas da unesete sljedeće podatke:" VerticalAlignment="Top" FontSize="18"/>
             <Button x:Name="button" Content="Registruj se" Command ="{Binding RegistracijaCommand}" CommandParameter="{Binding ElementName=passwordBox}" HorizontalAlignment="Stretch" Margin="164,576,159,0" VerticalAlignment="Top" FontSize="18"/>
             <TextBlock x:Name="textBlock6" Margin="25,466,371,122" TextWrapping="Wrap" Text="Grad" FontSize="18" RenderTransformOrigin="0.576,0.24"/>
-            <TextBox x:Name="textBox1" Margin="140,178,231,402" TextWrapping="Wrap" Text="{Binding Ime, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+            <TextBox x:Name="textBox1" Margin="140,178,199,402" TextWrapping="Wrap" Text="{Binding Ime, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
             <TextBox x:Name="textBox1_Copy" Margin="140,226,231,354" TextWrapping="Wrap" Text="{Binding Prezime, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
             <TextBox x:Name="textBox1_Copy1" Margin="140,274,231,306" TextWrapping="Wrap" Text="{Binding Username, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
             <TextBox x:Name="textBox1_Copy2" Margin="140,322,231,258" TextWrapping="Wrap" Text="{Binding Email, UpdateSourceTrigger=PropertyChanged}"/>
