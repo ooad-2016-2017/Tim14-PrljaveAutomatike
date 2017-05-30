@@ -1,0 +1,26 @@
+﻿<Page
+    x:Class="TutorFinderApp.View.SlanjeZahtjeva"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:TutorFinderApp.View"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <RelativePanel Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Button x:Name="button" Content="Posalji zahtjev" HorizontalAlignment="Stretch" Margin="560,508,463,0" VerticalAlignment="Top" Background="#FF890000" BorderBrush="#FF464D42"   Foreground="#FFFFFBFB"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="510,246,0,0" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="1.894,0.717">
+            <Run Text="  "/>
+            <Run Text="OD"/>
+        </TextBlock>
+        <TextBlock x:Name="textBlock_Copy" HorizontalAlignment="Left" Margin="604,246,0,0" TextWrapping="Wrap" Text="DO" VerticalAlignment="Top"/>
+        <TextBlock x:Name="textBlock_Copy1" HorizontalAlignment="Left" Margin="694,246,0,0" TextWrapping="Wrap" Text="Odaberi" VerticalAlignment="Top"/>
+        <TextBlock x:Name="textBlock_Copy2" HorizontalAlignment="Left" Margin="533,210,0,0" TextWrapping="Wrap" Text="Odaberi vrijeme instrukcija (min. 1h)" VerticalAlignment="Top"/>
+        <TextBlock x:Name="textBlock1" Margin="420,67,405,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="78" FontFamily="Californian FB" FontWeight="Bold">
+            <Run Foreground="#FF890000" Text="Tut"/>
+            <Run Text="or "/>
+            <Run Foreground="#FF890000" Text="Fi"/>
+            <Run Text="nder"/>
+        </TextBlock>
+    </RelativePanel>
+</Page>

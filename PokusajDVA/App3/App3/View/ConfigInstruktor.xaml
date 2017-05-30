@@ -1,0 +1,37 @@
+﻿<Page
+    x:Class="TutorFinderApp.View.ConfigInstruktor"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:TutorFinderApp.View"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <RelativePanel Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <TextBlock x:Name="textBlock1" Margin="420,78,415,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="78" FontFamily="Californian FB" FontWeight="Bold">
+            <Run Foreground="#FF890000" Text="Tut"/>
+            <Run Text="or "/>
+            <Run Foreground="#FF890000" Text="Fi"/>
+            <Run Text="nder"/>
+        </TextBlock>
+        <ListBox x:Name="listBox" HorizontalAlignment="Left" Height="118" Margin="467,574,0,0" VerticalAlignment="Top" Width="343"/>
+        <TextBlock x:Name="textBlock4" Margin="478,393,735,287" TextWrapping="Wrap" FontSize="18">
+            <Run Text="Od"/>
+            <Run Text=":"/>
+        </TextBlock>
+        <TextBlock x:Name="textBlock6" Margin="478,441,712,239" TextWrapping="Wrap" Text="Predmet" FontSize="18" RenderTransformOrigin="0.576,0.24"/>
+        <TextBox x:Name="textBox1_Copy4" Margin="593,393,623,295" TextWrapping="Wrap" Text=""/>
+        <TextBox x:Name="textBox1_Copy5" Margin="593,441,317,247" TextWrapping="Wrap" Text=""/>
+        <TextBlock x:Name="textBlock3_Copy" Margin="478,345,698,335" TextWrapping="Wrap" Text="Datum" FontSize="18"/>
+        <PasswordBox x:Name="passwordBox" Margin="593,345,317,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="textBox1_Copy" Margin="737,393,461,295" TextWrapping="Wrap" Text=""/>
+        <TextBlock x:Name="textBlock4_Copy" Margin="680,393,532,287" TextWrapping="Wrap" Text="Do:" FontSize="18"/>
+        <Button x:Name="button" Content="Dodaj termin" HorizontalAlignment="Stretch" Margin="467,513,684,0" VerticalAlignment="Top" FontSize="18" Foreground="White" Background="#FF890000"/>
+        <TextBlock x:Name="textBlock3_Copy1" Margin="478,308,588,372" TextWrapping="Wrap" Text="Instrukt ORIC" FontSize="18"/>
+        <Button x:Name="button_Copy" Content="Moj QRkod" HorizontalAlignment="Left" Margin="650,255,0,0" VerticalAlignment="Top" Background="#FF890000" Width="160" Foreground="White"/>
+        <Button x:Name="button_Copy1" Content="Ukloni termin" HorizontalAlignment="Stretch" Margin="680,513,468,0" VerticalAlignment="Top" FontSize="18" Background="#FF890000" Foreground="#FFFFF0F0"/>
+        <Button x:Name="button_Copy2" Content="Promijeni avatar" HorizontalAlignment="Stretch" Margin="650,197,459,0" VerticalAlignment="Top" FontSize="18" Foreground="#FFF9F9F9" Background="#FF890000"/>
+        <Image x:Name="image" Margin="478,167,570,321" RenderTransformOrigin="-0.036,-0.26" Stretch="Fill" Source="http://images.clipartpanda.com/father-face-clipart-1195444795826861756Gerald_G_Man_Face_4_-_World_Label.svg.hi.png"/>
+
+    </RelativePanel>
+</Page>
