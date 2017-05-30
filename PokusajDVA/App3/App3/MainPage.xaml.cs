@@ -12,6 +12,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using TutorFinderApp.View;
 
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
@@ -26,6 +27,11 @@ namespace TutorFinderApp
         public MainPage()
         {
             this.InitializeComponent();
+        }
+
+        public void OnPageLoad(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(MainKlijent));
         }
     }
 }
