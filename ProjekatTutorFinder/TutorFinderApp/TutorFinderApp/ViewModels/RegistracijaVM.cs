@@ -30,6 +30,7 @@ namespace TutorFinderApp.ViewModels
 
         private NavigationService navigationService;
 
+   
         public RegistracijaVM(NavigationService _navigationService)
         {
             RegistracijaCommand = new RelayCommand(IzvrsiRegistraciju);
@@ -55,7 +56,6 @@ namespace TutorFinderApp.ViewModels
                     {
                         //provjeriti ostala polja
                         dbCon.Klijenti.Add(new Klijent(Ime, Prezime, Email, GenerateHashFromString(((Windows.UI.Xaml.Controls.PasswordBox)_param).Password.ToString()), BrojTel, new Tuple<double, double>(0,0)));
-                        //pozvat konstruktordbCon.Klijenti.Add(Klijent())
                     }
                 }
                 else
@@ -63,39 +63,25 @@ namespace TutorFinderApp.ViewModels
                     if (dbCon.Instruktori.Where(b => b.Email == $"{Email}") != null)
                     {
                         //provjeriti ostala polja
-                        //pozvat konstruktordbCon.Klijenti.Add(Instruktori())
+                        dbCon.Instruktori.Add(new Instruktor(Ime, Prezime, Email, GenerateHashFromString(((Windows.UI.Xaml.Controls.PasswordBox)_param).Password.ToString()), BrojTel, new Tuple<double, double>(0, 0)));
                         //zahtjev za sliku
                     }
                 }
             }
+        }
 
-            /*using (var dbCon = new TutorFinderDbContext())
+        protected string GenerateHashFromString(string _string)
+        {
+            MD5 md5Hash = MD5.Create();
+            byte[] hashByte = md5Hash.ComputeHash(Encoding.UTF8.GetBytes(_string.ToString()));
+            StringBuilder sBuilder = new StringBuilder();
+
+            foreach (byte b in hashByte)
             {
-                if(dbCon.Klijenti.Where(b => b.Email == $"{Email}") != null)
-                    //postoji korisnik sa navedenim emailom
-                else
-                {
-                    //provjeriti je li sve popunjeno
-                    //upisati u bazu novog korisnika
-                    //Password = GenerateHashFromString(((Windows.UI.Xaml.Controls.PasswordBox)_param).Password.ToString());
-                    navigationService.Navigate(typeof(Login));
-                }
-            }*/
-        //------------------------------------------------------------------
+                sBuilder.Append(b.ToString("x2"));
+            }
 
-
-
-
-
-            //primjer kako se postavlja vrijednost nekog objekta u viewu 
-            /*Ime = "HARIS";
-            OnPropertyChanged("Ime");*/
-
-            //primjer kako se prebacuje na drugi view
-            /*navigationService.Navigate(typeof(Login));*/
-
-
-            //obaviti proces registracije
+            return sBuilder.ToString();
         }
 
     }

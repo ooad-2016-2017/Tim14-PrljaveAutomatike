@@ -3,7 +3,8 @@
     "Microsoft.CodeAnalysis.CSharp": "2.1.0",
     "Microsoft.EntityFrameworkCore": "1.1.2",
     "Microsoft.EntityFrameworkCore.Sqlite": "1.1.2",
-    "Microsoft.EntityFrameworkCore.Tools": "1.1.1"
+    "Microsoft.EntityFrameworkCore.Tools": "1.1.1",
+    "Microsoft.NETCore.Portable.Compatibility": "1.0.1"
   },
   "frameworks": {
     "uap10.0": {}

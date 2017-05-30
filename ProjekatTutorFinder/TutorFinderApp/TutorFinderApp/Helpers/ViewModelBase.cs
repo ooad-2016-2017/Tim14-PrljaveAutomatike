@@ -25,21 +25,6 @@ namespace TutorFinderApp.ViewModels
         {
             property = value;
             this.OnPropertyChanged(propertyName);
-        } 
-
-        //nema veze sa viewmodelom ali je korisno da bude tu
-        protected string GenerateHashFromString(string _string)
-        {
-            MD5 md5Hash = MD5.Create();
-            byte[] hashByte = md5Hash.ComputeHash(Encoding.UTF8.GetBytes(_string.ToString()));
-            StringBuilder sBuilder = new StringBuilder();
-
-            foreach (byte b in hashByte)
-            {
-                sBuilder.Append(b.ToString("x2"));
-            }
-
-            return sBuilder.ToString();
         }
     }
 }
