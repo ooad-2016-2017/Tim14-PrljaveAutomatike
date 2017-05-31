@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using TutorFinderApp.Helpers;
+using TutorFinderApp.Models;
 
 namespace TutorFinderApp.ViewModels
 {
@@ -19,6 +20,15 @@ namespace TutorFinderApp.ViewModels
             lista.Add("nermin");
             lista.Add("dzenita");
             OnPropertyChanged("lista");
+
+
+            using (var dbCon = new TutorFinderDbContext())
+            {
+                foreach(var klijent in dbCon.Klijenti)
+                {
+
+                }
+            }
         }
     }
 }
