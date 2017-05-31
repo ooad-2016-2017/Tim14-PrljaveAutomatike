@@ -13,12 +13,11 @@
                 <StackPanel Background="Gray" RenderTransformOrigin="-0.137,0.098">
                     <Button x:Name="HamburgerButton" FontFamily="Segoe MDL2 Assets" Content="&#xE700;" Width="51" Height="50" Background="Transparent" />
                     <StackPanel Background="Gray">
-                        <Button Content="Logout" Width="161" HorizontalAlignment="Right"/>
+                        <Button Content="Logout" Width="161" HorizontalAlignment="Right" Command="{Binding Logout}"/>
                     </StackPanel>
                     <StackPanel Background="Gray" >
-                        <Button Content="Termini" Width="161" HorizontalAlignment="Right"/>
+                        <Button Content="Termini" Width="161" HorizontalAlignment="Right" Command="{Binding Termini}"/>
                     </StackPanel>
-                    <Button Content="Dodaj novi predmet" Width="161" HorizontalAlignment="Right"/>
                     <Button Content="Moj QR kod" Width="161" HorizontalAlignment="Right" />
                 </StackPanel>
             </SplitView.Pane>

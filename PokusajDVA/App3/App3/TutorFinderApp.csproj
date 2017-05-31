@@ -109,8 +109,10 @@
     <Compile Include="Models\Termin.cs" />
     <Compile Include="Models\TutorFinderDbContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModels\InstruktorVM.cs" />
     <Compile Include="ViewModels\KlijentVm.cs" />
     <Compile Include="ViewModels\LoginVM.cs" />
+    <Compile Include="ViewModels\QRkodVM.cs" />
     <Compile Include="ViewModels\RegistracijaVM.cs" />
     <Compile Include="View\Login.xaml.cs">
       <DependentUpon>Login.xaml</DependentUpon>
@@ -120,6 +122,9 @@
     </Compile>
     <Compile Include="View\MainKlijent.xaml.cs">
       <DependentUpon>MainKlijent.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\QRkod.xaml.cs">
+      <DependentUpon>QRkod.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\Registracija.xaml.cs">
       <DependentUpon>Registracija.xaml</DependentUpon>
@@ -158,6 +163,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="View\MainKlijent.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\QRkod.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
