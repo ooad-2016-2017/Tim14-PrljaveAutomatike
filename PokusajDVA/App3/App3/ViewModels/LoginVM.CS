@@ -8,6 +8,8 @@ using TutorFinderApp.Models;
 using Windows.Security.Cryptography;
 using Windows.Security.Cryptography.Core;
 using Windows.Storage.Streams;
+using TutorFinderApp.View;
+using Windows.UI.Popups;
 
 namespace TutorFinderApp.ViewModels
 {
@@ -53,7 +55,7 @@ namespace TutorFinderApp.ViewModels
         }
 
 
-        private void IzvrsiLogin(object _param)
+        private async void IzvrsiLogin(object _param)
         {
 
             Password = GenerateHashFromString(((Windows.UI.Xaml.Controls.PasswordBox)_param).Password.ToString());
@@ -75,18 +77,18 @@ namespace TutorFinderApp.ViewModels
 
                 if (korisnik != null && count == 1)
                 {
-                    //  navigationService.Navigate(typeof(InfoStudent),korisnik);
+                    navigationService.Navigate(typeof(InfoStudent), korisnik);
                     // ovdje treba navigirati na stranicu main page korisnika ako je pronađen u bazi
-                    // 
-                }
-                //else
-                //{
-                //   var dialog = new MessageDialog("Pogrešno korisničko ime/šifra!", "Neuspješna
-                // prijava");
 
-                //  await dialog.ShowAsync();
-                //}
+                }
+                else
+                {
+                    var dialog = new MessageDialog("Pogrešno korisničko ime/šifra!", "Neuspješna prijava");
+
+                     await dialog.ShowAsync();
+                    }
+                }
             }
         }
     }
-}
+-
