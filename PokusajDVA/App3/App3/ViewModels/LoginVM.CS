@@ -91,4 +91,3 @@ namespace TutorFinderApp.ViewModels
             }
         }
     }
--

@@ -12,21 +12,18 @@ namespace TutorFinderApp.ViewModels
     {
         public List<string> lista { get; set; }
 
-        public KlijentVm(NavigationService _navigationService)
+        public KlijentVm(NavigationService _navigationService, object _arg)
         {
             NavigationService navigationService = _navigationService;
-            lista = new List<string>();
-            lista.Add("haris");
-            lista.Add("nermin");
-            lista.Add("dzenita");
-            OnPropertyChanged("lista");
-
 
             using (var dbCon = new TutorFinderDbContext())
             {
                 foreach(var klijent in dbCon.Klijenti)
                 {
+                    if(klijent.Ime == (((Klijent)_arg).Ime) && klijent.Prezime == (((Klijent)_arg).Prezime))
+                    {
 
+                    }
                 }
             }
         }

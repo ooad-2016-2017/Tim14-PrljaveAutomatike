@@ -17,5 +17,10 @@ namespace TutorFinderApp.Models
         public DateTime VrijemeOdrzavanja { get; set; }
         [Required]
         public byte[] QrKod { get; set; }
+        [Required]
+        public int KlijentId { get; set; }
+        [Required]
+        public int InstruktorId { get; set; }
+
     }
 }

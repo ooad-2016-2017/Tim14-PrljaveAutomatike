@@ -29,12 +29,11 @@ namespace TutorFinderApp.View
         public MainKlijent()
         {
             this.InitializeComponent();
-            DataContext = new KlijentVm(new NavigationService());
         }
 
-        private void Page_Loaded(object sender, RoutedEventArgs e)
+        protected override void OnNavigatedTo(NavigationEventArgs e)
         {
-            var dialog = new MessageDialog("ok", "ko");
+            DataContext = new KlijentVm(new NavigationService() , e.Parameter);
         }
     }
 }
