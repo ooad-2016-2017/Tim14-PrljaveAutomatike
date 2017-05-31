@@ -16,7 +16,7 @@ namespace TutorFinderApp.ViewModels
         public QRkodVM(NavigationService _navigationService, object _arg) {
             var write = new BarcodeWriter();
             write.Format = ZXing.BarcodeFormat.QR_CODE;
-            slika = write.Write((string)_arg);
+            slika = write.Write("haris"); // (string)_arg);
         }
     }
 }

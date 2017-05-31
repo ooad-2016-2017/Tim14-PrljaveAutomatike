@@ -15,6 +15,6 @@
             <Run Text="nder"/>
         </TextBlock>
         <Image x:Name="image" HorizontalAlignment="Left" Height="0" VerticalAlignment="Top" Width="0"/>
-        <Image x:Name="image1" Source="{Binding slika}" HorizontalAlignment="Left" Height="243" Margin="460,246,-823,-489" VerticalAlignment="Top" Width="363" RenderTransformOrigin="2.21,2.454"/>
+        <Image x:Name="image1" Source="{Binding slika, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Height="243" Margin="460,246,-823,-489" VerticalAlignment="Top" Width="363" RenderTransformOrigin="2.21,2.454"/>
     </RelativePanel>
 </Page>
