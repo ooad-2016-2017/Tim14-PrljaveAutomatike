@@ -99,8 +99,4 @@ namespace TutorFinderApp.ViewModels
             }
         }
     }
-<<<<<<< HEAD
 }
-=======
-    
->>>>>>> aa78fb36fdd611bc4de3d87f619972c69c21c4e3
