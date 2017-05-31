@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -8,10 +10,12 @@ using TutorFinderApp.Models;
 
 namespace TutorFinderApp.ViewModels
 {
+    class osnovnoKlijent : ObservableCollection<Klijent>{}
+
     class KlijentVm : ViewModelBase
     {
         static int count;
-        public List<string> lista { get; set; }
+        public List<string> lista;
         public RelayCommand Logout { get; set; }
         public RelayCommand TraziInstrukcije { get; set; }
         public NavigationService navigationService;
@@ -24,7 +28,7 @@ namespace TutorFinderApp.ViewModels
             lista = new List<string>();
             count = 0;
 
-            /*using (var dbCon = new TutorFinderDbContext())
+            using (var dbCon = new TutorFinderDbContext())
             {
                 foreach(var klijent in dbCon.Klijenti)
                 {
@@ -40,12 +44,8 @@ namespace TutorFinderApp.ViewModels
                         break;
                     }
                 }
-            }*/
-
-            lista.Add("a");
-            lista.Add("a");
-            lista.Add("a");
-            lista.Add("a");
+            }
+            
             OnPropertyChanged("lista");
         }
 
