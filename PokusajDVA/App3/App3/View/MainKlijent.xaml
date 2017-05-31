@@ -21,7 +21,6 @@
                 </StackPanel>
             </SplitView.Pane>
 
-<<<<<<< HEAD
             <SplitView.Content>
                 <Grid>
                     <StackPanel>
@@ -31,13 +30,7 @@
                     </StackPanel>
                 </Grid>
             </SplitView.Content>
-=======
-            <Grid>
-                <StackPanel>
-                    <ListBox Width="200" ItemsSource="{Binding lista, UpdateSourceTrigger=PropertyChanged}"/>
-                </StackPanel>
-            </Grid>
->>>>>>> 1a2e206212018e37d5d20927ab2b7f3aa6fbcdf7
+
         </SplitView>
     </Grid>
 </Page>

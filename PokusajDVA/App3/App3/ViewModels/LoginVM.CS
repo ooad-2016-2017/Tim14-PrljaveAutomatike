@@ -66,23 +66,31 @@ namespace TutorFinderApp.ViewModels
                 var Klijenti = DbObj.Klijenti;
 
                 //pretraga da li ime i password postoje u bazi
-
-                int count = 0;
                 Korisnik korisnik = null;
-                foreach (var k in Klijenti)
+
+                foreach (var k in DbObj.Klijenti)
                 {
-                    if (k.Email == Email && k.Password == Password) { korisnik = k; count = 1; break; }
+                    if (k.Email == Email && k.Password == Password)
+                    {
+                        korisnik = k;
+                        navigationService.Navigate(typeof(MainKlijent), k);
+                        return;
+                    }
                 }
 
 
-                if (korisnik != null && count == 1)
+                foreach (var k in DbObj.Instruktori)
                 {
-                    navigationService.Navigate(typeof(InfoStudent), korisnik);
-                    // ovdje treba navigirati na stranicu main page korisnika ako je pronađen u bazi
+                    if (k.Email == Email && k.Password == Password) {
+                        korisnik = k;
+                        navigationService.Navigate(typeof(MainKlijent), k);
+                        return;
+                    }
 
                 }
-                else
-                {
+
+                if (korisnik == null )
+                { 
                     var dialog = new MessageDialog("Pogrešno korisničko ime/šifra!", "Neuspješna prijava");
 
                      await dialog.ShowAsync();
@@ -91,4 +99,3 @@ namespace TutorFinderApp.ViewModels
             }
         }
     }
--
