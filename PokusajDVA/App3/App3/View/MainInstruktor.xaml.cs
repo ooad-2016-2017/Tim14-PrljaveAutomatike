@@ -20,12 +20,16 @@ namespace TutorFinderApp.View
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class InfoStudent : Page
+    public sealed partial class MainInstruktor : Page
     {
-        public InfoStudent()
+        public MainInstruktor()
         {
             this.InitializeComponent();
- 
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

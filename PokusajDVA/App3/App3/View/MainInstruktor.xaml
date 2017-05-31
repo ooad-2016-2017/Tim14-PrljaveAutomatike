@@ -1,0 +1,40 @@
+﻿<Page
+    x:Class="TutorFinderApp.View.MainInstruktor"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:TutorFinderApp.View"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <SplitView IsPaneOpen="False" DisplayMode="CompactOverlay" OpenPaneLength="200" CompactPaneLength="50" Margin="0,6,0,-6">
+            <SplitView.Pane>
+                <StackPanel Background="Gray" RenderTransformOrigin="-0.137,0.098">
+                    <Button x:Name="HamburgerButton" FontFamily="Segoe MDL2 Assets" Content="&#xE700;" Width="51" Height="50" Background="Transparent" />
+                    <StackPanel Background="Gray">
+                        <Button Content="Logout" Width="161" HorizontalAlignment="Right"/>
+                    </StackPanel>
+                    <StackPanel Background="Gray" >
+                        <Button Content="Termini" Width="161" HorizontalAlignment="Right"/>
+                    </StackPanel>
+                    <Button Content="Dodaj novi predmet" Width="161" HorizontalAlignment="Right"/>
+                    <Button Content="Moj QR kod" Width="161" HorizontalAlignment="Right" />
+                </StackPanel>
+            </SplitView.Pane>
+
+            <Grid>
+                <StackPanel >
+                    <ListBox Width="200" ItemsSource="{Binding lista, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" />
+                    <TextBlock x:Name="textBlock1" Margin="420,0,375,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="78" FontFamily="Californian FB" FontWeight="Bold">
+                        <Run Foreground="#FF890000" Text="Tut"/>
+                        <Run Text="or "/>
+                        <Run Foreground="#FF890000" Text="Fi"/>
+                        <Run Text="nder"/>
+                    </TextBlock>
+                </StackPanel>
+            </Grid>
+        </SplitView>
+
+    </Grid>
+</Page>

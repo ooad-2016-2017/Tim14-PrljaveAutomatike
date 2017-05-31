@@ -112,17 +112,11 @@
     <Compile Include="ViewModels\KlijentVm.cs" />
     <Compile Include="ViewModels\LoginVM.cs" />
     <Compile Include="ViewModels\RegistracijaVM.cs" />
-    <Compile Include="View\ConfigInstruktor.xaml.cs">
-      <DependentUpon>ConfigInstruktor.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="View\InfoInstruktor.xaml.cs">
-      <DependentUpon>InfoInstruktor.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="View\InfoStudent.xaml.cs">
-      <DependentUpon>InfoStudent.xaml</DependentUpon>
-    </Compile>
     <Compile Include="View\Login.xaml.cs">
       <DependentUpon>Login.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\MainInstruktor.xaml.cs">
+      <DependentUpon>MainInstruktor.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\MainKlijent.xaml.cs">
       <DependentUpon>MainKlijent.xaml</DependentUpon>
@@ -132,9 +126,6 @@
     </Compile>
     <Compile Include="View\SlanjeZahtjeva.xaml.cs">
       <DependentUpon>SlanjeZahtjeva.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="View\ZaboravljeniPassword.xaml.cs">
-      <DependentUpon>ZaboravljeniPassword.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -162,15 +153,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="View\ConfigInstruktor.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="View\InfoInstruktor.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="View\InfoStudent.xaml">
+    <Page Include="View\MainInstruktor.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -187,10 +170,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="View\Login.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="View\ZaboravljeniPassword.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

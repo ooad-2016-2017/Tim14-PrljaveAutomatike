@@ -81,7 +81,8 @@ namespace TutorFinderApp.ViewModels
 
                 foreach (var k in DbObj.Instruktori)
                 {
-                    if (k.Email == Email && k.Password == Password) {
+                    if (k.Email == Email && k.Password == Password)
+                    {
                         korisnik = k;
                         navigationService.Navigate(typeof(MainKlijent), k);
                         return;
@@ -89,17 +90,13 @@ namespace TutorFinderApp.ViewModels
 
                 }
 
-                if (korisnik == null )
-                { 
+                if (korisnik == null)
+                {
                     var dialog = new MessageDialog("Pogrešno korisničko ime/šifra!", "Neuspješna prijava");
 
-                     await dialog.ShowAsync();
-                    }
+                    await dialog.ShowAsync();
                 }
             }
         }
-<<<<<<< HEAD
     }
-=======
-    }
->>>>>>> d72049d0bcba065085913a25e318fc32e91e757e
+}
