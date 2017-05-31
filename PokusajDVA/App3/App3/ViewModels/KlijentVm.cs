@@ -10,6 +10,7 @@ namespace TutorFinderApp.ViewModels
 {
     class KlijentVm : ViewModelBase
     {
+        static int count;
         public List<string> lista { get; set; }
         public RelayCommand Logout { get; set; }
         public RelayCommand TraziInstrukcije { get; set; }
@@ -20,8 +21,10 @@ namespace TutorFinderApp.ViewModels
             navigationService = _navigationService;
             Logout = new RelayCommand(izvrsiLogout);
             TraziInstrukcije = new RelayCommand(traziInstrukcije);
+            lista = new List<string>();
+            count = 0;
 
-            using (var dbCon = new TutorFinderDbContext())
+            /*using (var dbCon = new TutorFinderDbContext())
             {
                 foreach(var klijent in dbCon.Klijenti)
                 {
@@ -37,7 +40,13 @@ namespace TutorFinderApp.ViewModels
                         break;
                     }
                 }
-            }
+            }*/
+
+            lista.Add("a");
+            lista.Add("a");
+            lista.Add("a");
+            lista.Add("a");
+            OnPropertyChanged("lista");
         }
 
         protected async void izvrsiLogout(object _arg)
