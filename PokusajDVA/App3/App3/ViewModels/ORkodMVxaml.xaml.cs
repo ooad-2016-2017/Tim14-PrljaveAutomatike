@@ -12,31 +12,19 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
-using TutorFinderApp.ViewModels;
-using TutorFinderApp.Helpers;
-using ZXing.Mobile;
-using ZXing.Net;
-using Windows.UI.Popups;
-using System.Threading.Tasks;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
-namespace TutorFinderApp.View
+namespace TutorFinderApp.ViewModels
 {
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class QRkod : Page
+    public sealed partial class ORkodMVxaml : Page
     {
-       
-        public QRkod()
+        public ORkodMVxaml()
         {
             this.InitializeComponent();
-        }
-        protected override void OnNavigatedTo(NavigationEventArgs e)
-        {
-            DataContext = new QRkodVM(new NavigationService(), e.Parameter);
-
         }
     }
 }

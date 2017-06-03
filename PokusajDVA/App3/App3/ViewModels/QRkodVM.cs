@@ -12,11 +12,26 @@ namespace TutorFinderApp.ViewModels
 {
     class QRkodVM: ViewModelBase
     {
-        public Windows.UI.Xaml.Media.Imaging.WriteableBitmap slika;
-        public QRkodVM(NavigationService _navigationService, object _arg) {
-            var write = new BarcodeWriter();
-            write.Format = ZXing.BarcodeFormat.QR_CODE;
-            slika = write.Write("haris"); // (string)_arg);
+      
+        
+        public Windows.UI.Xaml.Media.Imaging.WriteableBitmap slikica { get; set; }
+        public QRkodVM(NavigationService _navigationService, object _arg)
+        {
+            var barcodeWriter = new BarcodeWriter
+            {
+                Format = ZXing.BarcodeFormat.QR_CODE,
+                Options = new ZXing.Common.EncodingOptions
+                {
+                    Width = 300,
+                    Height = 300,
+                    Margin = 30
+                }
+            };
+
+            // var image = barcodeWriter.Write("Dzenita");
+            //slikica = barcodeWriter.Write("Dzenita");
+            var image = barcodeWriter.Write((string)_arg);
+            slikica =barcodeWriter.Write((string)_arg);
         }
     }
 }
