@@ -30,5 +30,6 @@ namespace TutorFinderApp.View
             this.InitializeComponent();
             this.DataContext = new LoginVM(new NavigationService());
         }
+   
     }
 }

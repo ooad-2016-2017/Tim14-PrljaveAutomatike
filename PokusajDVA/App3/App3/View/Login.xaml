@@ -7,34 +7,45 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <RelativePanel Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <TextBox x:Name="textBox1" Height="18" Margin="551,211,665,477" TextWrapping="Wrap" Text="{Binding Email, UpdateSourceTrigger=PropertyChanged}"/>
-        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="445,211,0,489" TextWrapping="Wrap" Text="email" Width="70"/>
-        <Button x:Name="button" Content="Prijavi se" Command="{Binding LoginCommand}" CommandParameter="{Binding ElementName=passwordBox}" HorizontalAlignment="Stretch" Margin="601,364,601,0" VerticalAlignment="Top" RenderTransformOrigin="0.108,-0.312" Background="#FF890000" Foreground="White"/>
-        <TextBlock x:Name="textBlock2" Margin="559,463,559,0" TextWrapping="Wrap" Text="Zaboravili ste password?" VerticalAlignment="Top"/>
-        <TextBlock x:Name="textBlock3" Height="28" Margin="601,518,603,0" TextWrapping="Wrap" Text="Registruj se" VerticalAlignment="Top"/>
-        <PasswordBox x:Name="passwordBox" Margin="551,298,665,0" VerticalAlignment="Top" />
-        <TextBlock x:Name="textBlock_Copy" HorizontalAlignment="Left" Margin="445,298,0,390" TextWrapping="Wrap" Width="70">
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="153*"/>
+            <RowDefinition Height="81*"/>
+            <RowDefinition Height="32*"/>
+            <RowDefinition Height="11*"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="11*"/>
+            <RowDefinition Height="94*"/>
+            <RowDefinition Height="153*"/>
+            <RowDefinition Height="153*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="197*"/>
+            <ColumnDefinition Width="51*"/>
+            <ColumnDefinition Width="47*"/>
+            <ColumnDefinition Width="63*"/>
+            <ColumnDefinition Width="65*"/>
+            <ColumnDefinition Width="4*"/>
+            <ColumnDefinition Width="213*"/>
+
+        </Grid.ColumnDefinitions>
+
+        <TextBox x:Name="textBox1" Grid.Column="3" Grid.Row="2" TextWrapping="Wrap" Text="{Binding Email, UpdateSourceTrigger=PropertyChanged}"  Grid.ColumnSpan="2"   Grid.RowSpan="2"  />
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Grid.Column="1" Grid.Row="2" TextWrapping="Wrap" Text="email" Width="52" />
+        <Button x:Name="button" Content="Prijavi se" Command="{Binding LoginCommand}" CommandParameter="{Binding ElementName=passwordBox}" HorizontalAlignment="Stretch"  VerticalAlignment="Top" RenderTransformOrigin="0.108,-0.312" Background="#FF890000" Foreground="White" Grid.Column="3" Height="38" Grid.Row="7" />
+        <PasswordBox x:Name="passwordBox"  Grid.Column="3" Height="22" Grid.Row="4" Grid.ColumnSpan="2" Grid.RowSpan="2"/>
+        <TextBlock x:Name="textBlock_Copy" HorizontalAlignment="Left"  TextWrapping="Wrap" Width="70" Grid.Column="1" Grid.Row="4"  Height="32" VerticalAlignment="Bottom">
             <Run Text="password"/>
             <LineBreak/>
             <Run/>
         </TextBlock>
-        <TextBlock x:Name="textBlock1" Margin="420,67,425,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="78" FontFamily="Californian FB" FontWeight="Bold">
+        <TextBlock x:Name="textBlock1" Grid.Row="0"  FontSize="78" FontFamily="Californian FB" FontWeight="Bold" VerticalAlignment="Bottom" Grid.ColumnSpan="6" Grid.Column="1" >
             <Run Foreground="#FF890000" Text="Tut"/>
             <Run Text="or "/>
             <Run Foreground="#FF890000" Text="Fi"/>
-            <Run Text="nder"/>
+            <Run Text="nder "/>
         </TextBlock>
-        <TextBlock x:Name="textBlock4" HorizontalAlignment="Left" Margin="98,116,0,0" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="-0.032,2.85" FontWeight="Bold">
-            <Run Text="ovdje treba ogo"/>
-            <LineBreak/>
-            <Run/>
-        </TextBlock>
-        <TextBlock x:Name="textBlock5" HorizontalAlignment="Left" Margin="1044,116,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontWeight="Bold">
-            <Run Text="i ovdje treba logo"/>
-            <LineBreak/>
-            <Run/>
-        </TextBlock>
+        <Button x:Name="button2" Content="Registracija" Grid.Column="3"  HorizontalAlignment="Left" Grid.Row="8"  Background="#FF890000" Command="{Binding RegistracijaCommand}" Foreground="White" VerticalAlignment="Top" Height="36" Width="137" Grid.ColumnSpan="2" />
 
-    </RelativePanel>
+    </Grid>
 </Page>

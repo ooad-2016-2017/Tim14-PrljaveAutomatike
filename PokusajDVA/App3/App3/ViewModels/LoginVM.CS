@@ -16,6 +16,7 @@ namespace TutorFinderApp.ViewModels
     class LoginVM : ViewModelBase
     {
         public RelayCommand LoginCommand { get; set; }
+        public RelayCommand RegistracijaCommand { get; set; }
 
         public string Email { get; set; }
         public string Password { get; set; }
@@ -25,14 +26,22 @@ namespace TutorFinderApp.ViewModels
         public LoginVM(NavigationService _navigationService)
         {
             LoginCommand = new RelayCommand(IzvrsiLogin);
+            RegistracijaCommand = new RelayCommand(IzvrsiRegistraciju);
+
             navigationService = _navigationService;
         }
 
+        private void IzvrsiRegistraciju(object obj)
+        {
+            navigationService.Navigate(typeof(Registracija));
+        }
+        
         public LoginVM()
         {
             LoginCommand = new RelayCommand(IzvrsiLogin);
 
         }
+
 
         protected string GenerateHashFromString(string strMsg)
         {

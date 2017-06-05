@@ -30,7 +30,7 @@ namespace TutorFinderApp.ViewModels
 
             // var image = barcodeWriter.Write("Dzenita");
             //slikica = barcodeWriter.Write("Dzenita");
-            var image = barcodeWriter.Write((string)_arg);
+           var image = barcodeWriter.Write((string)_arg);
             slikica =barcodeWriter.Write((string)_arg);
         }
     }
