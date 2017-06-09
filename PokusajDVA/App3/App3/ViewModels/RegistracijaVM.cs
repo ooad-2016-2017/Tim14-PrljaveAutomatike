@@ -12,6 +12,7 @@ using System.Windows.Input;
 using Windows.Security.Cryptography.Core;
 using Windows.Security.Cryptography;
 using Windows.Storage.Streams;
+using TutorFinderApp.View;
 
 namespace TutorFinderApp.ViewModels
 {
@@ -68,6 +69,8 @@ namespace TutorFinderApp.ViewModels
                     }
                 }
             }
+
+            navigationService.Navigate(typeof(Login));
         }
 
         protected string GenerateHashFromString(string strMsg)

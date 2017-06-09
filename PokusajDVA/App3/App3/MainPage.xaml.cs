@@ -33,7 +33,7 @@ namespace TutorFinderApp
 
         public void OnPageLoad(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(QRkod));
+            this.Frame.Navigate(typeof(Login));
         }
     }
 }

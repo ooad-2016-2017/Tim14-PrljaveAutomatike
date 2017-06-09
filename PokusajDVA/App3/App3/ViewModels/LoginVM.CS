@@ -93,7 +93,7 @@ namespace TutorFinderApp.ViewModels
                     if (k.Email == Email && k.Password == Password)
                     {
                         korisnik = k;
-                        navigationService.Navigate(typeof(MainKlijent), k);
+                        navigationService.Navigate(typeof(MainInstruktor), k);
                         return;
                     }
 
