@@ -20,10 +20,9 @@
             <RowDefinition Height="29*"/>
             <RowDefinition Height="30*"/>
             <RowDefinition Height="27*"/>
-            <RowDefinition Height="30*"/>
-            <RowDefinition Height="3*"/>
-            <RowDefinition Height="30*"/>
-            <RowDefinition Height="37*"/>
+            <RowDefinition Height="31*"/>
+
+            <RowDefinition Height="43*"/>
             <RowDefinition Height="45*"/>
             <RowDefinition Height="40*"/>
             <RowDefinition Height="49*"/>
@@ -47,17 +46,18 @@
         <TextBlock x:Name="textBlock2"  Text="Username" Grid.Column="1" FontSize="18" Grid.Row="6"/>
         <TextBlock x:Name="textBlock3" Grid.Column="1" Text="E-mail" FontSize="18" Grid.Row="8"/>
         <TextBlock x:Name="textBlock4" Grid.Column="1" Text="Broj telefona" FontSize="18" Grid.Row="9"/>
-        <CheckBox x:Name="checkBox" Content="Student/ucenik" Command="{Binding checkCommand}" CommandParameter="{Binding ElementName=checkBox1}" IsChecked="{Binding klijent}"  FontSize="18" Grid.Row="13" Grid.ColumnSpan="3" Grid.Column="2" Margin="0,3,0,2" Height="32" Width="148" />
-        <CheckBox x:Name="checkBox1" Content="Instruktor" Command="{Binding checkCommand}" CommandParameter="{Binding ElementName=checkBox}" IsChecked="{Binding instruktor}"  FontSize="18" Grid.Row="13" Grid.Column="6" Margin="0,3,0,2" Grid.ColumnSpan="2" Height="32" Width="120" />
+        <CheckBox x:Name="checkBox" Content="Student/ucenik" Command="{Binding checkCommand}" CommandParameter="{Binding ElementName=checkBox1}" IsChecked="{Binding klijent}"  FontSize="18" Grid.Row="12" Grid.ColumnSpan="3" Grid.Column="2" Margin="0,9,0,2" Height="32" Width="148" />
+        <CheckBox x:Name="checkBox1" Content="Instruktor" Command="{Binding checkCommand}" CommandParameter="{Binding ElementName=checkBox}" IsChecked="{Binding instruktor}"  FontSize="18" Grid.Row="12" Grid.Column="6" Margin="0,9,0,2" Grid.ColumnSpan="2" Height="32" Width="120" />
         <TextBlock x:Name="textBlock5" Text="Molimo Vas da unesete sljedeće podatke:" FontSize="18" Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="8"/>
-        <Button x:Name="button" Content="Registruj se" Command ="{Binding RegistracijaCommand}" CommandParameter="{Binding ElementName=passwordBox}" Grid.RowSpan="2"  FontSize="18" Grid.Row="15" Grid.Column="4"  Background="#FF890000" Foreground="White" Grid.ColumnSpan="3"/>
+        <Button x:Name="button" Content="Registruj se" Command ="{Binding RegistracijaCommand}" CommandParameter="{Binding ElementName=passwordBox}"  FontSize="18" Grid.Row="14" Grid.Column="4"  Background="#FF890000" Foreground="White" Grid.ColumnSpan="3"/>
         <TextBlock x:Name="textBlock6"  Text="Grad" FontSize="18" Grid.Column="1" Grid.Row="10"/>
-        <TextBox x:Name="textBox1"  Text="{Binding Ime, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Grid.Row="4" Grid.ColumnSpan="6" Grid.Column="2"   />
-        <TextBox x:Name="textBox1_Copy"  Text="{Binding Prezime, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Grid.Row="5" Grid.Column="2" Grid.ColumnSpan="6"  />
+        <TextBox x:Name="textBox1"  Text="{Binding Ime, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Grid.Row="4" Grid.ColumnSpan="6" Grid.Column="2"    />
+        <TextBox x:Name="textBox1_Copy"  Text="{Binding Prezime, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Grid.Row="5" Grid.Column="2" Grid.ColumnSpan="6"   />
         <TextBox x:Name="textBox1_Copy1"  Text="{Binding Username, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Grid.Row="6" Grid.Column="2" Grid.ColumnSpan="6"  />
         <TextBox x:Name="textBox1_Copy2"  Text="{Binding Email, UpdateSourceTrigger=PropertyChanged}" Grid.Row="8" Grid.Column="2" Grid.ColumnSpan="6"   />
         <TextBox x:Name="textBox1_Copy4" Text="{Binding BrojTel, UpdateSourceTrigger=PropertyChanged}" Grid.Row="9" Grid.ColumnSpan="6" Grid.Column="2"   />
-        <TextBox x:Name="textBox1_Copy5"  Text="{Binding Grad, UpdateSourceTrigger=PropertyChanged}" Grid.Row="10" Grid.Column="2"  Grid.RowSpan="2" Grid.ColumnSpan="6"  />
+        <!--<TextBox x:Name="textBox1_Copy5"  Text="{Binding Grad, UpdateSourceTrigger=PropertyChanged}" Grid.Row="10" Grid.Column="2"   Grid.ColumnSpan="6" />-->
+        <TextBox x:Name="textBox2" Text="{Binding Grad, UpdateSourceTrigger=PropertyChanged}" Grid.Row="10" Grid.ColumnSpan="6" Grid.Column="2" />
         <TextBlock x:Name="textBlock3_Copy" Grid.Column="1" Text="Password" FontSize="18" Grid.Row="7"/>
         <PasswordBox x:Name="passwordBox" Grid.Row="7" Grid.Column="2" Grid.ColumnSpan="6"   />
         <TextBlock x:Name="textBlock1_Copy"  FontSize="78" FontFamily="Californian FB" FontWeight="Bold" Grid.Column="1" Grid.Row="0" Grid.ColumnSpan="7" >

@@ -15,7 +15,7 @@ Platform assembly: C:\Users\Dzenita\Desktop\OOAD git\Tim14-VisokaSimbolika\Tutor
 Loading C:\Users\Dzenita\Desktop\OOAD git\Tim14-VisokaSimbolika\TutorFinderGame\TutorFinderGame_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
 Platform assembly: C:\Users\Dzenita\Desktop\OOAD git\Tim14-VisokaSimbolika\TutorFinderGame\TutorFinderGame_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
 Loading C:\Users\Dzenita\Desktop\OOAD git\Tim14-VisokaSimbolika\TutorFinderGame\TutorFinderGame_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
-- Completed reload, in  0.022 seconds
+- Completed reload, in  0.021 seconds
 Platform assembly: C:\Users\Dzenita\Desktop\OOAD git\Tim14-VisokaSimbolika\TutorFinderGame\TutorFinderGame_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: C:\Users\Dzenita\Desktop\OOAD git\Tim14-VisokaSimbolika\TutorFinderGame\TutorFinderGame_Data\Managed\System.dll (this message is harmless)
 WARNING: Shader Unsupported: 'Hidden/VR/BlitCopyFromTexArray' - Pass '' has no vertex shader
@@ -25,27 +25,11 @@ desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
 XInput1_3.dll not found. Trying XInput9_1_0.dll instead...
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 2.274267 ms
+UnloadTime: 63.556335 ms
 Best 28
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 1.079828 ms
-
-Unloading 2 unused Assets to reduce memory usage. Loaded Objects now: 480.
-Total: 0.668851 ms (FindLiveObjects: 0.192016 ms CreateObjectMapping: 0.031646 ms MarkObjects: 0.432358 ms  DeleteObjects: 0.008980 ms)
-
-Best 28
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.415680 ms
-
-Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 480.
-Total: 0.732572 ms (FindLiveObjects: 0.273271 ms CreateObjectMapping: 0.035495 ms MarkObjects: 0.411403 ms  DeleteObjects: 0.010263 ms)
 
 Setting up 2 worker threads for Enlighten.
-  Thread -> id: 2194 -> priority: 1 
-  Thread -> id: d8c -> priority: 1 
+  Thread -> id: 2834 -> priority: 1 
+  Thread -> id: 3390 -> priority: 1 
