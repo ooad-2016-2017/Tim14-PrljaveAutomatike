@@ -12,36 +12,22 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
-using TutorFinderApp.View;
-using TutorFinderApp.Helpers;
 using TutorFinderApp.ViewModels;
+using TutorFinderApp.Helpers;
 
+// The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
-
-// The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
-
-namespace TutorFinderApp
+namespace TutorFinderApp.View
 {
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class MainPage : Page
+    public sealed partial class PretrazivanjeLokacija : Page
     {
-
-        public MainPage()
+        public PretrazivanjeLokacija()
         {
             this.InitializeComponent();
-            this.DataContext = new MainPageVM(new NavigationService());
-        }
-
-        public void OnPageLoad(object sender, RoutedEventArgs e)
-        {
-            this.Frame.Navigate(typeof(PretrazivanjeLokacija));
-        }
-
-        private void button_Click(object sender, RoutedEventArgs e)
-        {
-
+            this.DataContext = new LokacijaVM(new NavigationService());
         }
     }
 }
