@@ -39,6 +39,6 @@ namespace TutorFinderApp.Models
             }
         }
 
-        public Klijent(string ime, string prezime, string email, string password, string brojTel, Tuple<double, double> lokacija) : base(ime, prezime, email, password, brojTel, lokacija) { }
+        public Klijent(int id, string ime, string prezime, string email,string username, string password, string brojTel, string lokacija) : base(id, ime, prezime, email, username, password, brojTel, lokacija) {KlijentId = id + 1; }
     }
 }

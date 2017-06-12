@@ -14,6 +14,8 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using TutorFinderApp.Models;
+using Microsoft.Data.Entity;
 
 namespace TutorFinderApp
 {
@@ -30,6 +32,11 @@ namespace TutorFinderApp
         {
             this.InitializeComponent();
             this.Suspending += OnSuspending;
+
+            using (var db = new TutorFinderDbContext())
+            {
+                db.Database.ApplyMigrations();
+            }
         }
 
         /// <summary>
