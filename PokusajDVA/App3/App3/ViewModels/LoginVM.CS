@@ -99,6 +99,7 @@ namespace TutorFinderApp.ViewModels
 
                 }
 
+
                 if (korisnik == null)
                 {
                     var dialog = new MessageDialog("Pogrešno korisničko ime/šifra!", "Neuspješna prijava");

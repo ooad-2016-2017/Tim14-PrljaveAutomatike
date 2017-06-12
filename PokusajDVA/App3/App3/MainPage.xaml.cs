@@ -31,12 +31,17 @@ namespace TutorFinderApp
         public MainPage()
         {
             this.InitializeComponent();
-           // this.DataContext = new MainPageVM(new NavigationService());
+            this.DataContext = new MainPageVM(new NavigationService());
         }
 
         public void OnPageLoad(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(Login));
+            //this.Frame.Navigate(typeof(Login));
+        }
+
+        private void button_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
