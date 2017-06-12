@@ -36,11 +36,11 @@ namespace TutorFinderApp.ViewModels
             navigationService.Navigate(typeof(Registracija));
         }
         
-        public LoginVM()
-        {
-            LoginCommand = new RelayCommand(IzvrsiLogin);
+        //public LoginVM()
+        //{
+        //    LoginCommand = new RelayCommand(IzvrsiLogin);
 
-        }
+        //}
 
 
         protected string GenerateHashFromString(string strMsg)

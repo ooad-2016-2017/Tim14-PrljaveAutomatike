@@ -112,6 +112,7 @@
     <Compile Include="ViewModels\InstruktorVM.cs" />
     <Compile Include="ViewModels\KlijentVm.cs" />
     <Compile Include="ViewModels\LoginVM.cs" />
+    <Compile Include="ViewModels\MainPageVM.cs" />
     <Compile Include="ViewModels\QRkodVM.cs" />
     <Compile Include="ViewModels\RegistracijaVM.cs" />
     <Compile Include="View\Login.xaml.cs">

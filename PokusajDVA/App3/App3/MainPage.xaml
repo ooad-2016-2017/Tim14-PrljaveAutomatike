@@ -7,7 +7,30 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d" Loaded="OnPageLoad">
 
-    <Grid Background="red">
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="167*"/>
+            <RowDefinition Height="113*"/>
+            <RowDefinition Height="131*"/>
+            <RowDefinition Height="62*"/>
+            <RowDefinition Height="247*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="370*"/>
+            <ColumnDefinition Width="108*"/>
+            <ColumnDefinition Width="160*"/>
+            <ColumnDefinition Width="161*"/>
+            <ColumnDefinition Width="111*"/>
+            <ColumnDefinition Width="370*"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock x:Name="textBlock1_Copy"  FontSize="90" HorizontalAlignment="Center" FontFamily="Californian FB" FontWeight="Bold" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="4" >
+            <Run Foreground="#FF890000" Text="Tut"/>
+            <Run Text="or "/>
+            <Run Foreground="#FF890000" Text="Fi"/>
+            <Run Text="nder"/>
+        </TextBlock>
+        <Button x:Name="button" Content="Registruj se" Command ="{Binding RegistracijaCommand}"  FontSize="18" Grid.Row="3" Grid.Column="2"  Background="#FF890000" Foreground="White" Height="60" Width="160"  />
+        <Button x:Name="button_Copy" Content="Prijavi se" Command="{Binding LoginCommand}"  Background="#FF890000" Foreground="White" HorizontalAlignment="Left" Grid.Column="3" Height="60" Grid.Row="3" Width="160"  />
 
     </Grid>
 </Page>

@@ -13,6 +13,8 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 using TutorFinderApp.View;
+using TutorFinderApp.Helpers;
+using TutorFinderApp.ViewModels;
 
 
 
@@ -29,6 +31,7 @@ namespace TutorFinderApp
         public MainPage()
         {
             this.InitializeComponent();
+           // this.DataContext = new MainPageVM(new NavigationService());
         }
 
         public void OnPageLoad(object sender, RoutedEventArgs e)

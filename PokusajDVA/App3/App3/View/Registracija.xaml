@@ -66,6 +66,7 @@
                 <Run Foreground="#FF890000" Text="Fi"/>
                 <Run Text="nder"/>
         </TextBlock>
+        <Button x:Name="button1" Content="Nazad"  Grid.Row="0" VerticalAlignment="Bottom" Command="{Binding NazadCommand}"/>
 
     </Grid>
 

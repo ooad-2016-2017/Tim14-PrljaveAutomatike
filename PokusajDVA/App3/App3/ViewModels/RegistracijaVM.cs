@@ -20,6 +20,7 @@ namespace TutorFinderApp.ViewModels
     {
         public RelayCommand RegistracijaCommand { get; set; }
         public RelayCommand checkCommand { get; set; }
+        public RelayCommand NazadCommand { get; set; }
         public bool klijent, instruktor, toggle = true;
         public string Ime { get; set; }
         public string Prezime { get; set; }
@@ -36,7 +37,13 @@ namespace TutorFinderApp.ViewModels
         {
             RegistracijaCommand = new RelayCommand(IzvrsiRegistraciju);
             checkCommand = new RelayCommand(postaviTipKorisnika);
+            NazadCommand = new RelayCommand(Idi_nazad);
             navigationService = _navigationService;
+        }
+
+        private void Idi_nazad(object obj)
+        {
+            navigationService.Navigate(typeof(Login));
         }
 
         private void postaviTipKorisnika(object _param)
