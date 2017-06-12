@@ -18,7 +18,7 @@
                     <StackPanel Background="Gray" >
                         <Button Content="Termini" Width="161" HorizontalAlignment="Right" Command="{Binding Termini}"/>
                     </StackPanel>
-                    <Button Content="Moj QR kod" Width="161" HorizontalAlignment="Right" />
+                    <Button Content="Moj QR kod" Width="161" Command="{Binding MojQR}" HorizontalAlignment="Right" />
                 </StackPanel>
             </SplitView.Pane>
 
