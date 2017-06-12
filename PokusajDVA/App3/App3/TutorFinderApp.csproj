@@ -102,6 +102,11 @@
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\20170612131229_InitialMigration.cs" />
+    <Compile Include="Migrations\20170612131229_InitialMigration.designer.cs">
+      <DependentUpon>20170612131229_InitialMigration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\TutorFinderDbContextModelSnapshot.cs" />
     <Compile Include="Models\Instruktor.cs" />
     <Compile Include="Models\Klijent.cs" />
     <Compile Include="Models\Korisnik.cs" />

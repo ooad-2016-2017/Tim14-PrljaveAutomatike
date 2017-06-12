@@ -60,19 +60,23 @@ namespace TutorFinderApp.ViewModels
             {
                 if (klijent)
                 {
-                    if (dbCon.Klijenti.Where(b => b.Email == $"{Email}") != null)
+                    if (dbCon.Klijenti.Where(b => b.Email == $"{Email}") == null)
                     {
                         //provjeriti ostala polja
-                        dbCon.Klijenti.Add(new Klijent(Ime, Prezime, Email, GenerateHashFromString(((Windows.UI.Xaml.Controls.PasswordBox)_param).Password.ToString()), BrojTel, new Tuple<double, double>(0, 0)));
+                        dbCon.Klijenti.Add(new Klijent(dbCon.Klijenti.Count(), Ime, Prezime, Email, Username, GenerateHashFromString(((Windows.UI.Xaml.Controls.PasswordBox)_param).Password.ToString()), BrojTel, "0 0"));
+                        dbCon.SaveChanges();
+                        navigationService.Navigate(typeof(Login));
                     }
                 }
                 else
                 {
-                    if (dbCon.Instruktori.Where(b => b.Email == $"{Email}") != null)
+                    if (dbCon.Instruktori.Where(b => b.Email == $"{Email}") == null)
                     {
                         //provjeriti ostala polja
-                        dbCon.Instruktori.Add(new Instruktor(Ime, Prezime, Email, GenerateHashFromString(((Windows.UI.Xaml.Controls.PasswordBox)_param).Password.ToString()), BrojTel, new Tuple<double, double>(0, 0)));
+                        dbCon.Instruktori.Add(new Instruktor(dbCon.Instruktori.Count(), Ime, Prezime, Email, Username, GenerateHashFromString(((Windows.UI.Xaml.Controls.PasswordBox)_param).Password.ToString()), BrojTel, "0 0"));
                         //zahtjev za sliku
+                        dbCon.SaveChanges();
+                        navigationService.Navigate(typeof(Login));
                     }
                 }
             }

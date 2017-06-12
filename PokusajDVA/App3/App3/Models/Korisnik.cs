@@ -12,7 +12,7 @@ namespace TutorFinderApp.Models
         protected string _Email;
         protected string _Username;
         protected string _Password;
-        protected Tuple<double, double> _Lokacija;
+        protected string _Lokacija;
 
         [Required]
         public string Ime
@@ -77,7 +77,7 @@ namespace TutorFinderApp.Models
             }
         }
         [Required]
-        public Tuple<double, double> Lokacija
+        public string Lokacija
         {
             get { return _Lokacija; }
             set
@@ -90,9 +90,14 @@ namespace TutorFinderApp.Models
             }
         }
 
-        public Korisnik(string ime, string prezime, string email, string password, string brojTel, Tuple<double, double> lokacija)
+        public Korisnik(int id, string ime, string prezime, string email, string username, string password, string brojTel, string lokacija)
         {
-
+            Ime = ime;
+            Prezime = prezime;
+            Email = email;
+            Password = password;
+            Lokacija = lokacija;
+            Username = username;
         }
     }
 }
