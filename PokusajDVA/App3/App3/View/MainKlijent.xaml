@@ -27,6 +27,12 @@
                         <ListBox ItemsSource="{Binding lista, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left">
 
                         </ListBox>
+                        <TextBlock x:Name="textBlock1" Margin="420,0,375,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="78" FontFamily="Californian FB" FontWeight="Bold">
+                            <Run Foreground="#FF890000" Text="Tut"/>
+                            <Run Text="or "/>
+                            <Run Foreground="#FF890000" Text="Fi"/>
+                            <Run Text="nder"/>
+                        </TextBlock>
                     </StackPanel>
                 </Grid>
             </SplitView.Content>

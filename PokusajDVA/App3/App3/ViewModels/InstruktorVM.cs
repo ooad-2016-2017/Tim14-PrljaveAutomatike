@@ -18,6 +18,7 @@ namespace TutorFinderApp.ViewModels
         public RelayCommand Termini { get; set; }
         public RelayCommand MojQRKod { get; set; }
         public List<string> lista { get; set; }
+        Instruktor inst;
 
         public InstruktorVM(NavigationService _navigationService, object _arg)
         {
@@ -26,7 +27,6 @@ namespace TutorFinderApp.ViewModels
             Termini = new RelayCommand(prikaziTermine);
             MojQRKod = new RelayCommand(PrikaziQRKod);
             lista = new List<string>();
-        
 
             using (var dbCon = new TutorFinderDbContext())
             {
@@ -40,6 +40,7 @@ namespace TutorFinderApp.ViewModels
                             {
                                 lista.Add("Predmet: " + termin.Predmet + ", vrijeme: " + termin.VrijemeOdrzavanja.Date + " " + termin.VrijemeOdrzavanja.TimeOfDay);
                             }
+                            inst = instruktor;
                         }
                         OnPropertyChanged("lista");
                         break;
@@ -54,7 +55,8 @@ namespace TutorFinderApp.ViewModels
 
         private void PrikaziQRKod(object obj)
         {
-            navigationService.Navigate(typeof(QRkod));
+            obj = inst.Ime  +DateTime.Now.ToString("h:mm:ss tt");
+            navigationService.Navigate(typeof(QRkod),obj);
         }
 
 
