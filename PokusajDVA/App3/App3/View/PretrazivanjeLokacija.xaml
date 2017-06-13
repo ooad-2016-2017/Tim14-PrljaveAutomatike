@@ -25,26 +25,27 @@
             <ColumnDefinition Width="83*"/>
             <ColumnDefinition Width="24*"/>
             <ColumnDefinition Width="77*"/>
-            <ColumnDefinition Width="119*"/>
+            <ColumnDefinition Width="70*"/>
+            <ColumnDefinition Width="49*"/>
             <ColumnDefinition Width="463*"/>
             <ColumnDefinition Width="229*"/>
             <ColumnDefinition Width="197*"/>
 
         </Grid.ColumnDefinitions>
-        <TextBlock x:Name="textBlock1" Grid.Row="0"  FontSize="78" FontFamily="Californian FB" FontWeight="Bold" VerticalAlignment="Bottom" Grid.Column="5" Height="89" Grid.ColumnSpan="1" >
+        <TextBlock x:Name="textBlock1" Grid.Row="0"  FontSize="78" FontFamily="Californian FB" FontWeight="Bold" VerticalAlignment="Bottom" Grid.Column="6" Height="89" Grid.ColumnSpan="1" >
             <Run Foreground="#FF890000" Text="Tut"/>
             <Run Text="or "/>
             <Run Foreground="#FF890000" Text="Fi"/>
             <Run Text="nder "/>
         </TextBlock>
-        <TextBlock x:Name="textBlock" Grid.Column="3"  HorizontalAlignment="Stretch" Text="Adresa" Grid.Row="2" Grid.ColumnSpan="2" />
-        <TextBlock x:Name="textBlock_1" Grid.Column="3"  HorizontalAlignment="Stretch" Text="Grad" Grid.Row="3"  VerticalAlignment="Top" Height="43" Grid.ColumnSpan="2" />
-        <TextBlock x:Name="textBlock_2" Grid.Column="3"  HorizontalAlignment="Stretch"  Text="Drzava" Grid.Row="4"  VerticalAlignment="Stretch" Grid.ColumnSpan="2" />
-        <TextBox  x:Name="textBox" HorizontalAlignment="Stretch" Grid.Row="2" Text="{Binding Adresa, Mode=TwoWay,  UpdateSourceTrigger=PropertyChanged}"   VerticalAlignment="Stretch" Grid.Column="1" Grid.ColumnSpan="2"/>
-        <TextBox x:Name="textBox_1" HorizontalAlignment="Stretch" Grid.Row="3" Text="{Binding Grad, Mode=TwoWay,  UpdateSourceTrigger=PropertyChanged}"  VerticalAlignment="Stretch" Grid.Column="1" Grid.ColumnSpan="2"/>
-        <TextBox x:Name="textBox_2" HorizontalAlignment="Stretch" Grid.Row="4" Text="{Binding Drzava, Mode=TwoWay,  UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Stretch" Grid.Column="1" Grid.ColumnSpan="2"/>
-        <Button x:Name="button" Content="Trazi" Command="{Binding Trazi}" Grid.Column="2" HorizontalAlignment="Stretch" Grid.Row="6" VerticalAlignment="Stretch"  Grid.ColumnSpan="2"/>
-        <WebView Grid.Column="5" HorizontalAlignment="Stretch" Source="{Binding sourceURL, UpdateSourceTrigger=PropertyChanged}" Grid.Row="2" Grid.RowSpan="6" VerticalAlignment="Stretch" Grid.ColumnSpan="2"/>
+        <TextBlock x:Name="textBlock" Grid.Column="1"  HorizontalAlignment="Stretch" Text="Adresa" Grid.Row="2" Grid.ColumnSpan="2" />
+        <TextBlock x:Name="textBlock_1" Grid.Column="1"  HorizontalAlignment="Stretch" Text="Grad" Grid.Row="3"  VerticalAlignment="Stretch" Grid.ColumnSpan="2" />
+        <TextBlock x:Name="textBlock_2" Grid.Column="1"  HorizontalAlignment="Stretch"  Text="Drzava" Grid.Row="4"  VerticalAlignment="Stretch" Grid.ColumnSpan="2" />
+        <TextBox  x:Name="textBox" HorizontalAlignment="Stretch" Grid.Row="2" Text="{Binding Adresa, Mode=TwoWay,  UpdateSourceTrigger=PropertyChanged}"   VerticalAlignment="Stretch" Grid.Column="2" Grid.ColumnSpan="3"/>
+        <TextBox x:Name="textBox_1" HorizontalAlignment="Stretch" Grid.Row="3" Text="{Binding Grad, Mode=TwoWay,  UpdateSourceTrigger=PropertyChanged}"  VerticalAlignment="Stretch" Grid.Column="2" Grid.ColumnSpan="3"/>
+        <TextBox x:Name="textBox_2" HorizontalAlignment="Stretch" Grid.Row="4" Text="{Binding Drzava, Mode=TwoWay,  UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Stretch" Grid.Column="2" Grid.ColumnSpan="3"/>
+        <Button x:Name="button" Content="Trazi" Background="#FF890000" Foreground="White" Command="{Binding Trazi}" Grid.Column="2" HorizontalAlignment="Stretch" Grid.Row="6" VerticalAlignment="Stretch"  Grid.ColumnSpan="2"/>
+        <WebView Grid.Column="6" HorizontalAlignment="Stretch" Source="{Binding sourceURL, UpdateSourceTrigger=PropertyChanged}" Grid.Row="2" Grid.RowSpan="6" VerticalAlignment="Stretch" Grid.ColumnSpan="2"/>
 
     </Grid>
 </Page>

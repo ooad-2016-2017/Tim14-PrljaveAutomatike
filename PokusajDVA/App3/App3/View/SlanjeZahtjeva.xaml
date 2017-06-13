@@ -8,19 +8,15 @@
     mc:Ignorable="d">
 
     <RelativePanel Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <Button x:Name="button" Content="Posalji zahtjev" HorizontalAlignment="Stretch" Margin="560,508,463,0" VerticalAlignment="Top" Background="#FF890000" BorderBrush="#FF464D42"   Foreground="#FFFFFBFB"/>
-        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="510,246,0,0" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="1.894,0.717">
-            <Run Text="  "/>
-            <Run Text="OD"/>
-        </TextBlock>
-        <TextBlock x:Name="textBlock_Copy" HorizontalAlignment="Left" Margin="604,246,0,0" TextWrapping="Wrap" Text="DO" VerticalAlignment="Top"/>
-        <TextBlock x:Name="textBlock_Copy1" HorizontalAlignment="Left" Margin="694,246,0,0" TextWrapping="Wrap" Text="Odaberi" VerticalAlignment="Top"/>
-        <TextBlock x:Name="textBlock_Copy2" HorizontalAlignment="Left" Margin="533,210,0,0" TextWrapping="Wrap" Text="Odaberi vrijeme instrukcija (min. 1h)" VerticalAlignment="Top"/>
-        <TextBlock x:Name="textBlock1" Margin="420,67,405,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="78" FontFamily="Californian FB" FontWeight="Bold">
+        <Button x:Name="button" Content="Posalji zahtjev" HorizontalAlignment="Stretch" Margin="585,638,438,-199" VerticalAlignment="Top" Background="#FF890000" BorderBrush="#FF464D42"   Foreground="#FFFFFBFB"/>
+        <TextBlock x:Name="textBlock_Copy2" HorizontalAlignment="Left" Margin="521,215,-59,-5" TextWrapping="Wrap" Text="Odaberi vrijeme i datum instrukcija " VerticalAlignment="Top" Width="236" />
+        <TextBlock x:Name="textBlock1" Margin="423,81,402,-14" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="78" FontFamily="Californian FB" FontWeight="Bold">
             <Run Foreground="#FF890000" Text="Tut"/>
             <Run Text="or "/>
             <Run Foreground="#FF890000" Text="Fi"/>
             <Run Text="nder"/>
         </TextBlock>
+        <CalendarView HorizontalAlignment="Center" Height="284"  VerticalAlignment="Center" Width="342" Margin="470,335,-470,-335"/>
+        <TimePicker HorizontalAlignment="Left" Height="44" Margin="470,261,-488,-273" VerticalAlignment="Top" Width="342"/>
     </RelativePanel>
 </Page>

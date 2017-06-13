@@ -10,13 +10,13 @@
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <SplitView IsPaneOpen="False" DisplayMode="CompactOverlay" OpenPaneLength="200" CompactPaneLength="50">
             <SplitView.Pane>
-                <StackPanel Background="Gray" RenderTransformOrigin="-0.137,0.098">
+                <StackPanel Background="WhiteSmoke" RenderTransformOrigin="-0.137,0.098">
                     <Button x:Name="HamburgerButton" FontFamily="Segoe MDL2 Assets" Content="&#xE700;" Width="51" Height="50" Background="Transparent" />
                     <StackPanel Background="Gray">
-                        <Button Content="Logout" Width="147" HorizontalAlignment="Right" Command="{Binding Logout}"/>
+                        <Button Content="Logout" Background="#FF890000" Foreground="White"  HorizontalAlignment="Stretch" Command="{Binding Logout}"/>
                     </StackPanel>
                     <StackPanel Background="Gray" >
-                        <Button Content="Traži instrukcije" Width="147" HorizontalAlignment="Right" Command="{Binding TraziInstrukcije}"/>
+                        <Button Content="Traži instrukcije"  HorizontalAlignment="Stretch" Background="#FF890000" Foreground="White" Command="{Binding TraziInstrukcije}"/>
                     </StackPanel>
                 </StackPanel>
             </SplitView.Pane>

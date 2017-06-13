@@ -26,5 +26,7 @@ namespace TutorFinderApp.View
         {
             this.InitializeComponent();
         }
+
+        
     }
 }

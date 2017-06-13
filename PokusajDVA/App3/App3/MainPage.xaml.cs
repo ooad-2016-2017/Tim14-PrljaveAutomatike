@@ -36,12 +36,12 @@ namespace TutorFinderApp
 
         public void OnPageLoad(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(PretrazivanjeLokacija));
+         this.Frame.Navigate(typeof(PretrazivanjeLokacija));
         }
 
-        private void button_Click(object sender, RoutedEventArgs e)
-        {
+    //    private void button_Click(object sender, RoutedEventArgs e)
+      //  {
 
-        }
+        //}
     }
 }

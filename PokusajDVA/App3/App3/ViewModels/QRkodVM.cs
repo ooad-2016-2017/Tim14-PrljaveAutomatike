@@ -27,11 +27,11 @@ namespace TutorFinderApp.ViewModels
                     Margin = 30
                 }
             };
-
-            // var image = barcodeWriter.Write("Dzenita");
-            //slikica = barcodeWriter.Write("Dzenita");
-           var image = barcodeWriter.Write((string)_arg);
-            slikica =barcodeWriter.Write((string)_arg);
+            string nesto = DateTime.Now.ToString("h:mm:ss tt");
+             var image = barcodeWriter.Write("Dzenitajfkjajflakglfkljkklgkdslg");
+            slikica = barcodeWriter.Write("Dzenita");
+          // var image = barcodeWriter.Write((string)_arg);
+            //slikica =barcodeWriter.Write((string)_arg);
         }
     }
 }

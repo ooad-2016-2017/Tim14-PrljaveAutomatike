@@ -9,25 +9,29 @@
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Grid.RowDefinitions>
-            <RowDefinition Height="164*"/>
-            <RowDefinition Height="75*"/>
+            <RowDefinition Height="72*"/>
+            <RowDefinition Height="92*"/>
+            <RowDefinition Height="34*"/>
+            <RowDefinition Height="41*"/>
             <RowDefinition Height="325*"/>
             <RowDefinition Height="156*"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="428*"/>
-            <ColumnDefinition Width="445*"/>
-            <ColumnDefinition Width="407*"/>
+            <ColumnDefinition Width="408*"/>
+            <ColumnDefinition Width="180*"/>
+            <ColumnDefinition Width="131*"/>
+            <ColumnDefinition Width="173*"/>
+            <ColumnDefinition Width="389*"/>
 
         </Grid.ColumnDefinitions>
-        <TextBlock x:Name="textBlock1" FontSize="78"  VerticalAlignment="Center" FontFamily="Californian FB" FontWeight="Bold"  Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="0">
+        <TextBlock x:Name="textBlock1" FontSize="78"  VerticalAlignment="Stretch" HorizontalAlignment="Stretch" FontFamily="Californian FB" FontWeight="Bold"  Grid.Column="1" Grid.ColumnSpan="3" Grid.Row="1">
             <Run Foreground="#FF890000" Text="Tut"/>
             <Run Text="or "/>
             <Run Foreground="#FF890000" Text="Fi"/>
             <Run Text="nder"/>
         </TextBlock>
-        <Image x:Name="image1" HorizontalAlignment="Center" Height="200" Width="200" VerticalAlignment="Center" Source="{Binding slikica, UpdateSourceTrigger=PropertyChanged}"  Grid.Column="1" Grid.Row="2"/>
-        <TextBlock x:Name="textBox" Grid.Column="1"  Grid.Row="1"  Text="Vaš QR kod: " VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <Image x:Name="image1" HorizontalAlignment="Center" Height="200" Width="200" VerticalAlignment="Center" Source="{Binding slikica, UpdateSourceTrigger=PropertyChanged}"  Grid.Column="1" Grid.Row="4" Margin="145,63,138,62" Grid.ColumnSpan="3"/>
+        <TextBlock x:Name="textBox" Grid.Column="2"  Grid.Row="3"  Text="      Vaš QR kod: " VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Grid.ColumnSpan="1" Grid.RowSpan="2"/>
 
         <!--<Image Name="slikica" HorizontalAlignment="Left" Height="300" Margin="436,180,-799,-423" VerticalAlignment="Top" Width="450" RenderTransformOrigin="2.21,2.454" ></Image>-->
 
